@@ -9,10 +9,9 @@ admin.site.register(Comentario)
 admin.site.register(Seguidores)
 admin.site.register(Playlist)
 admin.site.register(Like)
-admin.site.register(Etiqueta)
 admin.site.register(Guardado)
 admin.site.register(MensajePrivado)
-admin.site.register(Reporte)
+
 
 
 

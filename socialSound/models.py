@@ -1,22 +1,41 @@
 from django.db import models
 from django.utils import timezone
+from django.contrib.auth.hashers import make_password, check_password
 
 
 # Modelo Usuario 
 class Usuario(models.Model):
     nombre_usuario = models.CharField(max_length=100, unique=True)
+    password = models.CharField(max_length=100)  
     bio = models.TextField(blank=True)
     ciudad = models.CharField(max_length=150, blank=True)
     foto_perfil = models.ImageField(upload_to='fotos_perfil/', blank=True)
     fecha_nac = models.DateField()
 
+        # Métodos para gestionar seguidores directamente desde el modelo intermedio
+    def obtener_seguidores(self):
+        return Seguidores.objects.filter(seguido=self)
+
+    def obtener_seguidos(self):
+        return Seguidores.objects.filter(seguidor=self)
+
     def __str__(self):
         return self.nombre_usuario
+    
+    
+    # hasheo. Seguridad en password
+    def set_password(self, raw_password):
+        self.password = make_password(raw_password)
+
+    def check_password(self, raw_password):
+        return check_password(raw_password, self.password)
+    
 
 # modelo album
 class Album(models.Model):
     titulo = models.CharField(max_length=200)
-    artista = models.ForeignKey(Usuario, on_delete=models.CASCADE)
+    artista = models.CharField(max_length=200)
+    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
     fecha_lanzamiento = models.DateField()
     portada = models.ImageField(upload_to='album_portadas/', blank=True)
     descripcion = models.TextField(blank=True)
@@ -27,67 +46,6 @@ class Album(models.Model):
 
 # Modelo de Canciones
 class Cancion(models.Model):
-    titulo = models.CharField(max_length=200)
-    artista = models.CharField(max_length=100)
-    duracion = models.DurationField()
-    archivo_audio = models.FileField(upload_to='canciones/')
-    portada = models.ImageField(upload_to='cancion_portadas/', blank=True)
-    fecha_subida = models.DateTimeField(default=timezone.now)
-    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
-    album = models.ForeignKey(Album, on_delete=models.CASCADE, related_name='canciones', null=True, blank=True)
-
-    def __str__(self):
-        return self.titulo
-
-
-
-# Modelo de Comentarios
-class Comentario(models.Model):
-    contenido = models.TextField(max_length=255)
-    created_at = models.DateTimeField(default=timezone.now)
-    cancion = models.ForeignKey(Cancion, on_delete=models.CASCADE)
-    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return f'{self.usuario.nombre_usuario} comentó en {self.cancion.titulo}'
-
-
-# Modelo de Seguidores
-class Seguidores(models.Model):
-    seguidor = models.ForeignKey(Usuario, on_delete=models.CASCADE, related_name="seguidor")
-    seguido = models.ForeignKey(Usuario, on_delete=models.CASCADE, related_name='seguido')
-    follow_date = models.DateTimeField(default=timezone.now)
-
-    def __str__(self):
-        return f'{self.seguidor.nombre_usuario} sigue a {self.seguido.nombre_usuario}'
-
-
-# Modelo de Playlist
-class Playlist(models.Model):
-    nombre = models.CharField(max_length=100, blank=False)
-    descripcion = models.TextField(max_length=255)
-    fecha_creacion = models.DateTimeField(default=timezone.now)
-    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
-    canciones = models.ManyToManyField(Cancion, related_name='playlists')
-    publica = models.BooleanField(default=True)
-
-    def __str__(self):
-        return self.nombre
-
-
-# Modelo de Likes
-class Like(models.Model):
-    cancion = models.ForeignKey(Cancion, on_delete=models.CASCADE)
-    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
-    fecha_like = models.DateTimeField(default=timezone.now)
-    activo = models.BooleanField(default=True)
-
-    def __str__(self):
-        return f'{self.usuario.nombre_usuario} le gustó {self.cancion.titulo}'
-
-
-# Modelo de Etiquetas (géneros musicales)
-class Etiqueta(models.Model):
     CATEGORIAS_CHOICES = [
         ('rock', 'Rock'),
         ('jazz', 'Jazz'),
@@ -159,12 +117,102 @@ class Etiqueta(models.Model):
         ('dancehall', 'Dancehall'),
         ('dub', 'Dub'),
     ]
-    nombre = models.CharField(max_length=50, choices=CATEGORIAS_CHOICES)
-    canciones = models.ManyToManyField(Cancion, related_name='etiquetas')
+    etiqueta = models.CharField(
+        max_length=50, 
+        blank=False, 
+        choices=CATEGORIAS_CHOICES
+    )
+    titulo = models.CharField(max_length=200)
+    artista = models.CharField(max_length=100)
+    duracion = models.DurationField()
+    archivo_audio = models.FileField(upload_to='canciones/')
+    portada = models.ImageField(upload_to='cancion_portadas/', blank=True)
+    fecha_subida = models.DateTimeField(default=timezone.now)
+    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
+    album = models.ForeignKey(Album, on_delete=models.CASCADE, related_name='canciones', null=True, blank=True)
 
     def __str__(self):
-        return self.get_nombre_display()
+        return self.titulo
 
+
+
+# Modelo de Comentarios
+class Comentario(models.Model):
+    contenido = models.TextField()
+    fecha_publicacion = models.DateTimeField(default=timezone.now)
+    cancion = models.ForeignKey(Cancion, on_delete=models.CASCADE)
+    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f'{self.usuario.nombre_usuario} comentó en {self.cancion.titulo}'
+
+
+
+# Modelo de Playlist
+class Playlist(models.Model):
+    nombre = models.CharField(max_length=100, blank=False)
+    descripcion = models.TextField(max_length=255)
+    fecha_creacion = models.DateTimeField(default=timezone.now)
+    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
+    canciones = models.ManyToManyField(Cancion, through='CancionPlaylist', related_name='playlists')
+    publica = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.nombre
+
+
+
+# Modelo de Likes
+class Like(models.Model):
+    cancion = models.ForeignKey(Cancion, on_delete=models.CASCADE)
+    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
+    fecha_like = models.DateTimeField(default=timezone.now)
+    activo = models.BooleanField(default=True)
+
+    def __str__(self):
+        return f'{self.usuario.nombre_usuario} le gustó {self.cancion.titulo}'
+
+
+
+# Modelo de Mensajes Privados
+class MensajePrivado(models.Model):
+    emisor = models.ForeignKey(Usuario, related_name='emisor', on_delete=models.CASCADE)
+    receptor = models.ForeignKey(Usuario, related_name='receptor', on_delete=models.CASCADE)
+    contenido = models.TextField()
+    fecha_envio = models.DateTimeField(default=timezone.now)
+    leido = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f'Mensaje de {self.emisor.nombre_usuario} a {self.receptor.nombre_usuario}'
+
+
+
+# Modelo de Seguidores
+class Seguidores(models.Model):
+    seguidor = models.ForeignKey(Usuario, on_delete=models.CASCADE, related_name="seguidores_list")
+    seguido = models.ForeignKey(Usuario, on_delete=models.CASCADE, related_name='siguiendo_list')
+    fecha_inicio = models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        unique_together = ('seguidor', 'seguido')
+
+    def __str__(self):
+        return f'{self.seguidor.nombre_usuario} sigue a {self.seguido.nombre_usuario}'  
+
+
+# del modelo entidad relacion, la relación playlist contiene cancion crea una tabla intermedia:
+class CancionPlaylist(models.Model):
+    cancion = models.ForeignKey(Cancion, on_delete=models.CASCADE)
+    playlist = models.ForeignKey(Playlist, on_delete=models.CASCADE)
+    orden = models.PositiveIntegerField(default=0)
+    fecha_agregada = models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        unique_together = ('cancion', 'playlist')  # Evita duplicación de canciones en la misma playlist
+
+    def __str__(self):
+        return f'{self.cancion.titulo} en {self.playlist.nombre}'
+    
 
 # Modelo de canciones guardadas
 class Guardado(models.Model):
@@ -177,53 +225,6 @@ class Guardado(models.Model):
 
     def __str__(self):
         return f'{self.usuario.nombre_usuario} guardó {self.cancion.titulo}'
-
-
-class Grupo(models.Model):
-    nombre = models.CharField(max_length=150)
-    descripcion = models.TextField(blank=True)
-    fecha_creacion = models.DateTimeField(default=timezone.now)
-    miembros = models.ManyToManyField(Usuario, related_name='grupos')
-
-    def __str__(self):
-        return self.nombre
-
-
-# Modelo de Reportes de contenido
-class Reporte(models.Model):
-    REPORT_CHOICES = [
-        ('spam', 'Spam'),
-        ('contenido_inapropiado', 'Contenido Inapropiado'),
-        ('derechos_autor', 'Infracción de Derechos de Autor'),
-        ('otro', 'Otro'),
-    ]
-    
-    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE, related_name='reportes')
-    cancion = models.ForeignKey(Cancion, on_delete=models.SET_NULL, null=True, blank=True, related_name='reportes')
-    comentario = models.ForeignKey(Comentario, on_delete=models.SET_NULL, null=True, blank=True, related_name='reportes')
-    tipo_reporte = models.CharField(max_length=50, choices=REPORT_CHOICES)
-    descripcion = models.TextField(blank=True)
-    fecha_reporte = models.DateTimeField(default=timezone.now)
-    resuelto = models.BooleanField(default=False)
-
-    def __str__(self):
-        return f'Reporte de {self.usuario.nombre_usuario} - {self.get_tipo_reporte_display()}'
-
-
-# Modelo de Mensajes Privados
-class MensajePrivado(models.Model):
-    emisor = models.ForeignKey(Usuario, related_name='emisor', on_delete=models.CASCADE)
-    receptor = models.ForeignKey(Usuario, related_name='receptor', on_delete=models.CASCADE)
-    content = models.TextField()
-    sent_at = models.DateTimeField(default=timezone.now)
-    is_read = models.BooleanField(default=False)
-
-    def __str__(self):
-        return f'Mensaje de {self.emisor.nombre_usuario} a {self.receptor.nombre_usuario}'
-
-
-
-
 
 
 
