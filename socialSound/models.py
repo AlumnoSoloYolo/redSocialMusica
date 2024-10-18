@@ -179,6 +179,16 @@ class Guardado(models.Model):
         return f'{self.usuario.nombre_usuario} guardó {self.cancion.titulo}'
 
 
+class Grupo(models.Model):
+    nombre = models.CharField(max_length=150)
+    descripcion = models.TextField(blank=True)
+    fecha_creacion = models.DateTimeField(default=timezone.now)
+    miembros = models.ManyToManyField(Usuario, related_name='grupos')
+
+    def __str__(self):
+        return self.nombre
+
+
 # Modelo de Reportes de contenido
 class Reporte(models.Model):
     REPORT_CHOICES = [
