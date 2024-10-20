@@ -1,0 +1,4967 @@
+[
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add album",
+        "content_type": 7,
+        "codename": "add_album"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change album",
+        "content_type": 7,
+        "codename": "change_album"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete album",
+        "content_type": 7,
+        "codename": "delete_album"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view album",
+        "content_type": 7,
+        "codename": "view_album"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add usuario",
+        "content_type": 8,
+        "codename": "add_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change usuario",
+        "content_type": 8,
+        "codename": "change_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete usuario",
+        "content_type": 8,
+        "codename": "delete_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view usuario",
+        "content_type": 8,
+        "codename": "view_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add cancion",
+        "content_type": 9,
+        "codename": "add_cancion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change cancion",
+        "content_type": 9,
+        "codename": "change_cancion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete cancion",
+        "content_type": 9,
+        "codename": "delete_cancion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view cancion",
+        "content_type": 9,
+        "codename": "view_cancion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add cancion playlist",
+        "content_type": 10,
+        "codename": "add_cancionplaylist"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change cancion playlist",
+        "content_type": 10,
+        "codename": "change_cancionplaylist"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete cancion playlist",
+        "content_type": 10,
+        "codename": "delete_cancionplaylist"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view cancion playlist",
+        "content_type": 10,
+        "codename": "view_cancionplaylist"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add detalle album",
+        "content_type": 11,
+        "codename": "add_detallealbum"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change detalle album",
+        "content_type": 11,
+        "codename": "change_detallealbum"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete detalle album",
+        "content_type": 11,
+        "codename": "delete_detallealbum"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view detalle album",
+        "content_type": 11,
+        "codename": "view_detallealbum"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add detalle cancion",
+        "content_type": 12,
+        "codename": "add_detallecancion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change detalle cancion",
+        "content_type": 12,
+        "codename": "change_detallecancion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete detalle cancion",
+        "content_type": 12,
+        "codename": "delete_detallecancion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view detalle cancion",
+        "content_type": 12,
+        "codename": "view_detallecancion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add estadisticas album",
+        "content_type": 13,
+        "codename": "add_estadisticasalbum"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change estadisticas album",
+        "content_type": 13,
+        "codename": "change_estadisticasalbum"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete estadisticas album",
+        "content_type": 13,
+        "codename": "delete_estadisticasalbum"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view estadisticas album",
+        "content_type": 13,
+        "codename": "view_estadisticasalbum"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add playlist",
+        "content_type": 14,
+        "codename": "add_playlist"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change playlist",
+        "content_type": 14,
+        "codename": "change_playlist"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete playlist",
+        "content_type": 14,
+        "codename": "delete_playlist"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view playlist",
+        "content_type": 14,
+        "codename": "view_playlist"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add mensaje privado",
+        "content_type": 15,
+        "codename": "add_mensajeprivado"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change mensaje privado",
+        "content_type": 15,
+        "codename": "change_mensajeprivado"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete mensaje privado",
+        "content_type": 15,
+        "codename": "delete_mensajeprivado"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view mensaje privado",
+        "content_type": 15,
+        "codename": "view_mensajeprivado"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add like",
+        "content_type": 16,
+        "codename": "add_like"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change like",
+        "content_type": 16,
+        "codename": "change_like"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete like",
+        "content_type": 16,
+        "codename": "delete_like"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view like",
+        "content_type": 16,
+        "codename": "view_like"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+        "name": "Can add comentario",
+        "content_type": 17,
+        "codename": "add_comentario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+        "name": "Can change comentario",
+        "content_type": 17,
+        "codename": "change_comentario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+        "name": "Can delete comentario",
+        "content_type": 17,
+        "codename": "delete_comentario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+        "name": "Can view comentario",
+        "content_type": 17,
+        "codename": "view_comentario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+        "name": "Can add seguidores",
+        "content_type": 18,
+        "codename": "add_seguidores"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+        "name": "Can change seguidores",
+        "content_type": 18,
+        "codename": "change_seguidores"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+        "name": "Can delete seguidores",
+        "content_type": 18,
+        "codename": "delete_seguidores"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+        "name": "Can view seguidores",
+        "content_type": 18,
+        "codename": "view_seguidores"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+        "name": "Can add guardado",
+        "content_type": 19,
+        "codename": "add_guardado"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+        "name": "Can change guardado",
+        "content_type": 19,
+        "codename": "change_guardado"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+        "name": "Can delete guardado",
+        "content_type": 19,
+        "codename": "delete_guardado"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+        "name": "Can view guardado",
+        "content_type": 19,
+        "codename": "view_guardado"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "socialSound",
+        "model": "album"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "socialSound",
+        "model": "usuario"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "socialSound",
+        "model": "cancion"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "socialSound",
+        "model": "cancionplaylist"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "socialSound",
+        "model": "detallealbum"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "socialSound",
+        "model": "detallecancion"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "socialSound",
+        "model": "estadisticasalbum"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "socialSound",
+        "model": "playlist"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "socialSound",
+        "model": "mensajeprivado"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "socialSound",
+        "model": "like"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+        "app_label": "socialSound",
+        "model": "comentario"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+        "app_label": "socialSound",
+        "model": "seguidores"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+        "app_label": "socialSound",
+        "model": "guardado"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 1,
+    "fields": {
+        "nombre_usuario": "Over college establish significant. Less interest any painting.",
+        "password": "Before often perform everyone.",
+        "bio": "It against likely drive. Left must reduce cold. Building box purpose foot Democrat contain American finish.",
+        "ciudad": "Prove toward fly financial line hear center. Final number citizen wrong black big soon.",
+        "foto_perfil": "TV.json",
+        "fecha_nac": "1987-03-16"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 2,
+    "fields": {
+        "nombre_usuario": "Give rise thought data beyond offer say. Real determine safe kid bank. Remain with store statement.",
+        "password": "Glass friend figure enough. What western sense concern.",
+        "bio": "No whatever these continue. Process manage sort final others teach. Eye tree become statement blue yes. Get ability talk science mention long.\nAssume after myself.",
+        "ciudad": "Number develop each. Section sort subject.\nWeight evidence shoulder suffer. Can affect report already doctor. Lot drug someone surface agent its.",
+        "foto_perfil": "difficult.css",
+        "fecha_nac": "2017-12-17"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 3,
+    "fields": {
+        "nombre_usuario": "Strong thus point order tend well. Individual focus scene building same Mrs.",
+        "password": "Man thought conference I. Home bit PM heart evidence. Human card standard behind side part.",
+        "bio": "Field difference new. Allow society onto fall. Leader name build put.\nPerhaps agree moment material. Middle occur find report matter man study.",
+        "ciudad": "Soon kitchen price action under vote safe. Lot conference message record kind. Day ago threat deep bill apply.",
+        "foto_perfil": "side.bmp",
+        "fecha_nac": "1974-04-25"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 4,
+    "fields": {
+        "nombre_usuario": "Write to wish year share care by. Already increase green away.",
+        "password": "Outside each tough. Per later language military.",
+        "bio": "Organization most even term participant even. Also physical agree piece. Theory stock almost check say material Republican hospital.",
+        "ciudad": "Model whose fall case. Again couple sister serve.\nRoad management wait Mrs. Per capital life quality political gas.",
+        "foto_perfil": "on.avi",
+        "fecha_nac": "2000-07-25"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 5,
+    "fields": {
+        "nombre_usuario": "Pm very less positive information away. Now a various.",
+        "password": "We attention last too identify. Hotel source air water.",
+        "bio": "Significant strategy outside fact worker moment central. Glass product hotel party eight travel.",
+        "ciudad": "Significant church although main responsibility cell. Cup feeling walk two executive. Act away sound human.",
+        "foto_perfil": "these.csv",
+        "fecha_nac": "1986-06-02"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 6,
+    "fields": {
+        "nombre_usuario": "Child start rich fund special husband. Start us ahead current.",
+        "password": "Hear everyone could best ball production.",
+        "bio": "Between send standard able conference president. Adult per imagine but first radio finish. Avoid there only a truth.",
+        "ciudad": "Usually improve them responsibility push market. Continue effort network soldier thought effect reach improve.",
+        "foto_perfil": "analysis.txt",
+        "fecha_nac": "2004-10-14"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 7,
+    "fields": {
+        "nombre_usuario": "Break project past back population sell public. Natural would hit return.\nPattern table want nor.",
+        "password": "Spring explain culture particularly consumer. List security next serious argue range scene night.",
+        "bio": "International program church let few. Society benefit pressure.\nDiscussion range both skill herself. Including red success among. Final prove short apply. Work catch evening increase should.",
+        "ciudad": "Imagine address with then. Produce read experience much bit thank. Challenge money sound she couple year building.",
+        "foto_perfil": "answer.jpeg",
+        "fecha_nac": "1985-12-29"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 8,
+    "fields": {
+        "nombre_usuario": "Source real beat side. Drug window eye center.",
+        "password": "Box news raise response wall big. She rise not together herself after executive.",
+        "bio": "Effort ready usually board central. Others approach fall PM interview.\nPer subject good side can care. Report cultural authority dream record whatever benefit.",
+        "ciudad": "Interesting house group collection. Matter article animal challenge meeting after.",
+        "foto_perfil": "economy.js",
+        "fecha_nac": "2011-01-18"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 9,
+    "fields": {
+        "nombre_usuario": "Attention expert shake because rest material. Standard bed history unit television.",
+        "password": "Upon inside next rich. Deep American pattern among series.",
+        "bio": "Military measure raise visit political lot. Manage accept past threat.",
+        "ciudad": "Democrat story model whatever third way. More effect behind senior public. Address cost certain entire experience course.",
+        "foto_perfil": "high.csv",
+        "fecha_nac": "1980-06-12"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 10,
+    "fields": {
+        "nombre_usuario": "Ahead network loss first. Program take sense argue. Develop turn charge decision possible.",
+        "password": "Third answer series cultural important. Join family would mean. Great art require yet nor.",
+        "bio": "Entire ahead course need easy nation behavior. Research I body close. Star walk read push final near.\nMeasure tonight natural ability hotel. Half owner plan edge feel daughter.",
+        "ciudad": "Raise near whole material son development. Three number her wide wide speech hospital. Approach service list stop do third find.",
+        "foto_perfil": "common.mp3",
+        "fecha_nac": "1987-02-22"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 11,
+    "fields": {
+        "nombre_usuario": "Happen instead difficult by.",
+        "password": "Level my there nearly. Special far be for. Employee find assume.",
+        "bio": "Data likely image base bill turn. History record military should do author whom.\nSing eat check. Common cup than threat movie whole. Partner thought cover involve fact employee.",
+        "ciudad": "Material old between country get. Economic still well little maybe. Understand money while book set.",
+        "foto_perfil": "down.tiff",
+        "fecha_nac": "1975-05-23"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 12,
+    "fields": {
+        "nombre_usuario": "Must arm time executive suggest. Business shake pull tax.",
+        "password": "You car him answer. Attack participant security behavior. Again go home than man describe turn.",
+        "bio": "Or garden industry ever fire. Forward skill mission address.\nCover walk during institution position Congress. So his investment economy middle sometimes. Ground include sometimes hold still.",
+        "ciudad": "What agency positive television economy again region. Place your for structure relationship.",
+        "foto_perfil": "choose.tiff",
+        "fecha_nac": "2019-12-17"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 13,
+    "fields": {
+        "nombre_usuario": "Stuff why health hear rich live. Understand collection type health.",
+        "password": "Available player environmental pass food.\nElse race help. Or entire need point.",
+        "bio": "Simple why make purpose cause degree continue.\nPerson draw account because nearly. Figure once moment. Wide ahead buy gun.",
+        "ciudad": "Lawyer office people draw another. Cut look government. Southern treatment audience consumer soon.",
+        "foto_perfil": "specific.tiff",
+        "fecha_nac": "2017-12-06"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 14,
+    "fields": {
+        "nombre_usuario": "Doctor thank road important able along. Money street car seem certain spring.",
+        "password": "Easy age dog hope weight along place. Officer type we true interest peace.",
+        "bio": "Probably field item country stage usually. Where knowledge will military.\nYeah capital region especially look catch. Yard fine you sport other instead. Form move build company carry.",
+        "ciudad": "Rather law cut letter bit short education. Radio morning suffer environmental world pattern. Statement huge pretty then food see wide receive.",
+        "foto_perfil": "increase.tiff",
+        "fecha_nac": "1997-06-24"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 15,
+    "fields": {
+        "nombre_usuario": "Scientist cell character him poor management. Stuff contain activity change likely major line.",
+        "password": "Gas that sit never I. Family unit development everybody population.",
+        "bio": "Crime ok reason. Analysis imagine never until.\nStage represent bag quickly more perform wish. Over professor along reach thing wind cut.",
+        "ciudad": "Occur health nation. Happen final possible end not yeah.",
+        "foto_perfil": "market.mov",
+        "fecha_nac": "1981-03-31"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 16,
+    "fields": {
+        "nombre_usuario": "Agreement hold do he character safe like. Heavy laugh line Republican live.",
+        "password": "Fill executive keep him. Model receive country down.",
+        "bio": "Once establish today team authority. Job sometimes consider.\nItem war top art result side. Environment remember individual whose drive sister resource. Fill debate instead check weight capital hand.",
+        "ciudad": "Its economic sure agent together attention. Buy from worker individual red professional true. Type happy keep care politics.",
+        "foto_perfil": "night.js",
+        "fecha_nac": "1985-12-06"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 17,
+    "fields": {
+        "nombre_usuario": "First last them safe. Available home affect two truth easy mind. Dinner official maintain.",
+        "password": "Receive agency consider opportunity fact single. Prepare finish meeting teacher physical well this.",
+        "bio": "Almost manage add through. Walk remember nature her bring. Individual later change start establish as yet space.\nDoctor significant carry part person enough truth. Despite window raise language.",
+        "ciudad": "Authority physical option maybe reflect they. Indeed team fire course need. Within likely real audience.",
+        "foto_perfil": "role.mov",
+        "fecha_nac": "1986-04-25"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 18,
+    "fields": {
+        "nombre_usuario": "Product peace among head community require foot huge. Its push interview TV few.",
+        "password": "Than officer firm energy. Although project nice. Create score almost central.",
+        "bio": "Yes positive Congress. Safe discussion collection writer.\nDrug president technology attorney resource bed whole kid. Money shake room card common.",
+        "ciudad": "Save government step mission public glass. Send center not have.",
+        "foto_perfil": "mind.mp3",
+        "fecha_nac": "2002-11-06"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 19,
+    "fields": {
+        "nombre_usuario": "Shake yet wear step. Of hit property really magazine down.",
+        "password": "Agent discover be if them maybe. Buy painting religious reach wear.",
+        "bio": "Set dinner indicate against weight. Son seat same collection give. Conference student lead inside hospital kid.\nEye walk four idea. Door wonder according. Citizen notice clearly way.",
+        "ciudad": "Simple themselves case about. Tax resource likely own pretty staff star. More class however.",
+        "foto_perfil": "to.png",
+        "fecha_nac": "2009-12-06"
+    }
+},
+{
+    "model": "socialSound.usuario",
+    "pk": 20,
+    "fields": {
+        "nombre_usuario": "Also choice blood real put wall. Little visit occur firm white company.",
+        "password": "Fish chair pull seek some food organization huge.",
+        "bio": "Work economic wife. Especially trial treat either technology couple at. Company child run get list past.",
+        "ciudad": "Where language major. Risk space that. Word less idea.",
+        "foto_perfil": "above.png",
+        "fecha_nac": "1974-12-06"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 1,
+    "fields": {
+        "seguidor": 19,
+        "seguido": 8,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 2,
+    "fields": {
+        "seguidor": 2,
+        "seguido": 15,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 3,
+    "fields": {
+        "seguidor": 15,
+        "seguido": 14,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 4,
+    "fields": {
+        "seguidor": 14,
+        "seguido": 18,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 5,
+    "fields": {
+        "seguidor": 4,
+        "seguido": 7,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 6,
+    "fields": {
+        "seguidor": 9,
+        "seguido": 14,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 7,
+    "fields": {
+        "seguidor": 1,
+        "seguido": 3,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 8,
+    "fields": {
+        "seguidor": 5,
+        "seguido": 3,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 9,
+    "fields": {
+        "seguidor": 14,
+        "seguido": 13,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 10,
+    "fields": {
+        "seguidor": 15,
+        "seguido": 3,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 11,
+    "fields": {
+        "seguidor": 2,
+        "seguido": 20,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 12,
+    "fields": {
+        "seguidor": 3,
+        "seguido": 3,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 13,
+    "fields": {
+        "seguidor": 10,
+        "seguido": 13,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 14,
+    "fields": {
+        "seguidor": 7,
+        "seguido": 15,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 15,
+    "fields": {
+        "seguidor": 3,
+        "seguido": 2,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 16,
+    "fields": {
+        "seguidor": 19,
+        "seguido": 15,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 17,
+    "fields": {
+        "seguidor": 1,
+        "seguido": 2,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 18,
+    "fields": {
+        "seguidor": 16,
+        "seguido": 6,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 19,
+    "fields": {
+        "seguidor": 5,
+        "seguido": 17,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.seguidores",
+    "pk": 20,
+    "fields": {
+        "seguidor": 11,
+        "seguido": 3,
+        "fecha_inicio": "2024-10-20T22:34:37.778"
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 1,
+    "fields": {
+        "titulo": "Wife carry exactly continue. Trial room speech subject mind either instead hotel. Into expect actually role partner.",
+        "artista": "Third model position lose feeling charge. Talk there oil ability lot expert. Store little employee hotel rest.",
+        "usuario": 5,
+        "fecha_lanzamiento": "1984-02-17",
+        "portada": "could.mp4",
+        "descripcion": "Appear Mr cup administration later college. Citizen since realize practice education. Into rest lot information everything order focus. He program national bit event.",
+        "reposts": [
+            4
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 2,
+    "fields": {
+        "titulo": "But beyond memory under particularly necessary kid. Play help result middle.\nDifficult sister pull. Before morning side test population national along.",
+        "artista": "Term think affect magazine senior bad not. Magazine season fast pull card line. Son better develop theory forward. Such friend still find main word into parent.\nNot here series watch.",
+        "usuario": 20,
+        "fecha_lanzamiento": "1986-04-25",
+        "portada": "result.flac",
+        "descripcion": "Power matter improve policy. Particular but stage Congress study.\nCare big idea audience measure often message. Trade bill age including build performance develop.",
+        "reposts": [
+            1,
+            11
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 3,
+    "fields": {
+        "titulo": "Involve road suddenly receive president poor. These some miss too blood source once. Position describe capital specific news. Significant kind similar short.",
+        "artista": "Store factor want go. Under worker friend quickly.\nLanguage wife military life customer glass middle. Water mouth clear environmental. Guy off hundred run lot.",
+        "usuario": 17,
+        "fecha_lanzamiento": "1974-06-01",
+        "portada": "spring.wav",
+        "descripcion": "Suddenly more people design. Even standard continue road fine economy ten. One dog article life young.\nCivil join operation site relate before. Allow rather red matter parent whether despite.",
+        "reposts": [
+            2,
+            4
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 4,
+    "fields": {
+        "titulo": "Physical recently art offer. Remember green Mr deep tax section concern. Themselves church Mrs season.\nNo expert church traditional always explain long. Cold black social social they citizen we.",
+        "artista": "Pressure here forget between rather eat. Media operation Mr I answer white.\nForeign hot push. We summer rest future conference main eight gas. Form sort strong eight either east address.",
+        "usuario": 2,
+        "fecha_lanzamiento": "1981-11-25",
+        "portada": "camera.csv",
+        "descripcion": "Side ball anyone spring every. Sell anyone end product discover choice. Skin star move store. Network none than capital.\nAnimal win southern build fly child research.",
+        "reposts": [
+            4,
+            7,
+            13
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 5,
+    "fields": {
+        "titulo": "Practice happen born boy. Identify trade military order candidate effect.\nThem attack item believe pay. Painting end can today rather. Easy opportunity style treatment foreign less minute.",
+        "artista": "Strategy whose skin under threat we boy eight. Well continue store plant. Animal group so strong modern.\nSkill couple try apply town. Government nation hot thousand. Score drive lot foot.",
+        "usuario": 15,
+        "fecha_lanzamiento": "2014-07-26",
+        "portada": "again.mp4",
+        "descripcion": "Oil give walk glass. Image argue radio official nation. Network perform protect allow month I.",
+        "reposts": [
+            1,
+            8
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 6,
+    "fields": {
+        "titulo": "West career many attorney identify somebody growth. Tell move effort heart.\nDream everything have senior. Sport memory book manager different out cell half.",
+        "artista": "Writer yourself hard a and campaign education. Still better travel involve together happen. Others amount plan hold.",
+        "usuario": 9,
+        "fecha_lanzamiento": "1971-08-13",
+        "portada": "stuff.avi",
+        "descripcion": "Between instead easy.\nCenter person prevent role. Nothing candidate wear instead. Company white line effect most provide.",
+        "reposts": [
+            16
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 7,
+    "fields": {
+        "titulo": "Also daughter improve teach open. More clearly ahead stage offer.\nGive phone evening control. Eight director house success. Building professional behavior leader impact enjoy.",
+        "artista": "Section personal character leg fire. Run form thing together. Commercial between determine world body.\nCare then bar. Major firm everyone between beyond mother simply. Task occur tough bill.",
+        "usuario": 3,
+        "fecha_lanzamiento": "2016-05-14",
+        "portada": "instead.html",
+        "descripcion": "Nor seek Republican Mrs lead present. Make surface nothing bed. Organization class much state.\nRate offer effort still system health prepare. Change late thought mention.",
+        "reposts": [
+            7,
+            14
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 8,
+    "fields": {
+        "titulo": "Fish everything stock dinner fight short. Ground camera hotel decide.\nBest no fly produce mention. Billion represent teach moment. Rock cost crime person require several.",
+        "artista": "Big bag single family new. Parent PM nearly up.\nDog agree clear sometimes me move.\nSouthern half local which herself idea either development. Father environmental nor inside.",
+        "usuario": 4,
+        "fecha_lanzamiento": "2021-05-17",
+        "portada": "catch.js",
+        "descripcion": "That discussion voice parent can yeah bit. Soon recognize miss condition training provide significant of.\nAdult arm speech should. Role policy car upon knowledge hand clear firm.",
+        "reposts": [
+            1,
+            6,
+            7,
+            16
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 9,
+    "fields": {
+        "titulo": "Six important often scientist wife need figure. Rule dark ready group court population.",
+        "artista": "At your include clearly future because father.\nPopulation raise thank top sense see as. Life peace popular way shoulder.",
+        "usuario": 16,
+        "fecha_lanzamiento": "2010-09-15",
+        "portada": "fly.txt",
+        "descripcion": "Traditional management down issue administration. Since thought wife behind. Article note specific pattern.\nShort season he. Carry industry effect since stuff alone exactly for.",
+        "reposts": [
+            7,
+            12,
+            14
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 10,
+    "fields": {
+        "titulo": "Defense myself west stop. Buy section price say fish it. Choice nearly or carry perform parent.\nThere believe continue goal buy approach. Environmental beyond leg eye season fish south.",
+        "artista": "Teacher relationship policy. Stage ask I human field.\nPopulation present sort mean cover.\nUnit score tax process. Hour change audience from degree may. Industry remain of hand south race worker.",
+        "usuario": 12,
+        "fecha_lanzamiento": "1999-10-31",
+        "portada": "allow.mp4",
+        "descripcion": "At yes role plan. Above whose thing heart mention husband clear trouble. Think its take move.\nRepresent college notice case state. It day light trip kind hope page.",
+        "reposts": [
+            2
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 11,
+    "fields": {
+        "titulo": "Gun laugh free like growth edge. Federal stand nature city.\nAny example give process say discuss. Moment dream memory no. Recently source develop.",
+        "artista": "Drive remain ok example tend answer and. Owner every ready Democrat write knowledge network Republican.",
+        "usuario": 3,
+        "fecha_lanzamiento": "2018-02-26",
+        "portada": "behavior.png",
+        "descripcion": "Piece many stuff rise onto. Understand here contain news community. Church knowledge study visit over.",
+        "reposts": [
+            4
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 12,
+    "fields": {
+        "titulo": "Then owner region indicate back military. Expect prevent I small best group. Side represent participant near street man security.",
+        "artista": "Relate lead wife. Training its school special argue push drug last. Full reduce court before participant people.",
+        "usuario": 17,
+        "fecha_lanzamiento": "2007-06-11",
+        "portada": "by.png",
+        "descripcion": "Science store paper low officer total police impact. First security company by table. Such evidence though hard reflect run building mother. Yard federal poor high leader similar city.",
+        "reposts": [
+            4,
+            5,
+            9
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 13,
+    "fields": {
+        "titulo": "Situation news beat performance.\nReduce light fine course. Firm opportunity ball.",
+        "artista": "Fly often across theory capital kitchen company nature. Dog them condition. Prepare space environment report single.",
+        "usuario": 9,
+        "fecha_lanzamiento": "1981-03-30",
+        "portada": "yard.csv",
+        "descripcion": "Defense across process there weight. Political sit very remain.\nReality her go past down. Require season benefit. Around anyone rise safe church.",
+        "reposts": [
+            8,
+            12,
+            17,
+            20
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 14,
+    "fields": {
+        "titulo": "I sing accept environmental opportunity listen camera. But teacher high what star produce.",
+        "artista": "Gas after argue particular happy test election. Care single pass follow body begin beyond.\nResponsibility since floor far court beat letter. She prevent voice believe.",
+        "usuario": 8,
+        "fecha_lanzamiento": "2011-08-17",
+        "portada": "stock.gif",
+        "descripcion": "Feeling machine decision tough understand power sign. Expert read military anything. Anyone animal hospital.\nWant upon artist brother. Billion occur common force around thus.",
+        "reposts": [
+            1,
+            15
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 15,
+    "fields": {
+        "titulo": "Marriage social generation create open student lay. Trouble data notice hold statement back.\nPoint attention group assume form other approach. Sea feel action. Start catch performance.",
+        "artista": "Growth member section research. Third indicate card difference want road college. Example record body next seek song subject.\nSuffer although western look.",
+        "usuario": 3,
+        "fecha_lanzamiento": "1979-05-09",
+        "portada": "would.png",
+        "descripcion": "On significant cell fine level interest position. Another far shake happy particularly left.\nWall hotel national activity writer term. Citizen trip line instead machine between.",
+        "reposts": [
+            4,
+            10,
+            15
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 16,
+    "fields": {
+        "titulo": "Many yeah defense these leave. Glass medical chance hair loss.\nSpring suggest official happen central. Every issue author international either budget benefit animal. Last general political full.",
+        "artista": "Check difference become call explain hair often senior. Indeed owner specific against sometimes answer. Item health yes model their report. Professional others per.",
+        "usuario": 16,
+        "fecha_lanzamiento": "1995-10-03",
+        "portada": "born.jpg",
+        "descripcion": "However million clear religious feel end. Play number thought soon person item. Its first their room good list town.\nBook then follow process. Beyond role fund seek task fly could.",
+        "reposts": [
+            4,
+            13
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 17,
+    "fields": {
+        "titulo": "Eat economy young office. Style act whatever off in whole. Agency event others rule wind work science.\nRemember leg interview just protect different.",
+        "artista": "Because such civil chair simply need rest. Radio accept bill cultural we. Should property out ready.",
+        "usuario": 8,
+        "fecha_lanzamiento": "1987-09-17",
+        "portada": "plant.webm",
+        "descripcion": "Make night letter quickly be product. Finish nice include per see risk care.\nAnimal run hospital successful. Reflect collection still garden.\nMan after day arm long seat. Seat art away until.",
+        "reposts": [
+            4,
+            6,
+            10,
+            12
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 18,
+    "fields": {
+        "titulo": "Oil strategy individual later pull art. School by ball enter painting decade.\nAdministration law lot.\nThese both thus cost federal. Sea couple rock statement.",
+        "artista": "Before bring unit southern. Me cup after hot still. Mean shake simple.\nAlthough moment again office gas. Item act charge.\nToward reason already people popular. Cup newspaper situation.",
+        "usuario": 1,
+        "fecha_lanzamiento": "1977-04-09",
+        "portada": "participant.png",
+        "descripcion": "Expect free camera most respond your name worry. Buy account perform soldier wife. Mission baby room hotel throw business.",
+        "reposts": [
+            4,
+            7,
+            8,
+            14
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 19,
+    "fields": {
+        "titulo": "May cut picture popular she course happen. Blue together agency against population offer carry. Reason enjoy area us maybe piece clearly service.",
+        "artista": "Education these history glass occur seem entire. Home center the face.\nWhite moment least. Each body fast give loss sure question.",
+        "usuario": 19,
+        "fecha_lanzamiento": "2023-09-22",
+        "portada": "central.jpeg",
+        "descripcion": "Ahead prepare film small most image. More receive decision stop vote senior. Role hospital role.",
+        "reposts": [
+            2
+        ]
+    }
+},
+{
+    "model": "socialSound.album",
+    "pk": 20,
+    "fields": {
+        "titulo": "Attention star walk. All week product somebody.\nBoth follow responsibility leg fast blood. Yet quickly although amount.",
+        "artista": "Audience art box perhaps drop its operation push. Within ability rate scientist.\nBall position across central until. Simple police child require during.",
+        "usuario": 3,
+        "fecha_lanzamiento": "2010-08-19",
+        "portada": "cultural.jpg",
+        "descripcion": "Any win couple sure source. Ago every room trip law no mouth.\nBoy throw visit machine notice read after.\nCold money material threat.",
+        "reposts": [
+            4,
+            12,
+            17,
+            18,
+            20
+        ]
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 1,
+    "fields": {
+        "album": 13,
+        "productor": "Nature field half. Anyone technology industry.\nFinal produce among fill. Dog side computer color job. Color learn suffer less figure shake.",
+        "estudio_grabacion": "Little message market radio reality industry safe. Happen improve specific.\nSuccess worker laugh media suddenly.",
+        "numero_pistas": 26596,
+        "sello_discografico": "Join bad worry audience get white. Eye upon early relate would inside change."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 2,
+    "fields": {
+        "album": 16,
+        "productor": "Employee nation public data response give finally environmental. Including her skill purpose. She friend century.\nHead sister member billion nor sound. Fly table weight approach month fine.",
+        "estudio_grabacion": "Tree kid debate leader. Explain best modern include eat evidence get. Police parent watch student production system whole see.\nClaim plan avoid major. Increase go season front offer tend.",
+        "numero_pistas": 4820,
+        "sello_discografico": "Central guy maintain purpose. Buy on suggest allow television. Turn support several pick."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 3,
+    "fields": {
+        "album": 18,
+        "productor": "Tv them among six west Congress act she. Born so seven visit response. Push central two visit movement.",
+        "estudio_grabacion": "Argue summer rest more protect draw week mention. Radio site long offer word.\nEmployee alone seven actually who himself.\nInterest manage morning system type. Price important foot.",
+        "numero_pistas": 31556,
+        "sello_discografico": "Tv Democrat kitchen rich network. Field this maybe Congress conference."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 4,
+    "fields": {
+        "album": 3,
+        "productor": "American could trade arrive around large. Heart east down war low poor trip generation.\nSpeak story picture amount study stand avoid. Tough already front plan beat during care.",
+        "estudio_grabacion": "Establish style suggest interest network apply. Answer type under economy image yeah expert.\nWorld law plan. With act away every say miss live especially.",
+        "numero_pistas": 18743,
+        "sello_discografico": "High firm window government compare information church. Town yeah want run skin dog."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 5,
+    "fields": {
+        "album": 1,
+        "productor": "Exactly relate always pass. Leave between interview. Certain sometimes beat paper say stand.\nOur assume box attack. Perhaps loss similar account.",
+        "estudio_grabacion": "Table determine free impact professor talk size.\nNo none test four personal best. House central apply land. Peace director level best assume.",
+        "numero_pistas": 5723,
+        "sello_discografico": "Alone sure evidence character business throw example. Agent fight policy single whether first."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 6,
+    "fields": {
+        "album": 4,
+        "productor": "Couple up space manage. Commercial per half upon involve way name.\nCover talk really. Since its move check discussion. Wonder way enjoy seat body investment represent.",
+        "estudio_grabacion": "Yeah family rule. Sort north form face. Include way later what challenge.\nOff senior wear arrive. Stay talk method economic. Become song establish discussion. Be price strong deal.",
+        "numero_pistas": 13655,
+        "sello_discografico": "Exist design experience raise. By minute opportunity."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 7,
+    "fields": {
+        "album": 2,
+        "productor": "Store building material fund candidate not others. Live recognize keep want build election nor. Just strategy local.",
+        "estudio_grabacion": "Interesting issue fly discuss. Help challenge citizen anyone explain activity little.\nMeet call out base ever throughout network. Hot my argue rock none risk treat account.",
+        "numero_pistas": 5028,
+        "sello_discografico": "Seven strategy range big."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 8,
+    "fields": {
+        "album": 8,
+        "productor": "Material option eye it whom morning court nor. Hundred before action too business year challenge.\nAt rest stop save. Occur political effect happen thank policy.",
+        "estudio_grabacion": "Treat beyond book bad anyone use. Interview owner us pressure nothing left address.\nIts very over seek. Fire rest responsibility three attack.",
+        "numero_pistas": 31469,
+        "sello_discografico": "Only way we dog condition away soldier. Happy job group learn above property."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 9,
+    "fields": {
+        "album": 6,
+        "productor": "Form example these produce team help old. Someone against ask tough low Republican anyone. Camera impact many force work war.",
+        "estudio_grabacion": "This decade six sometimes. Soldier sea live more size ability left. Whom late themselves language Mrs Democrat glass unit. College hundred least knowledge alone into evidence.",
+        "numero_pistas": 1891,
+        "sello_discografico": "Statement change baby cell teacher girl while. Activity feeling answer leader."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 10,
+    "fields": {
+        "album": 5,
+        "productor": "Build option dream education quite Mr. Right certain grow eat agent left sing. Paper card police do market.\nWorker against beat. Mission respond much.",
+        "estudio_grabacion": "Play argue newspaper red. Avoid also feel these card. Page new happy who.\nKeep along board manage throughout citizen follow main. Future building art training piece. List inside language series.",
+        "numero_pistas": 14830,
+        "sello_discografico": "Agency threat common pull. Respond affect discuss movie. Light former small picture on catch."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 11,
+    "fields": {
+        "album": 9,
+        "productor": "Design various which education good keep major.\nLate wide difference. Air similar room professional behavior black suffer.",
+        "estudio_grabacion": "Much during lead really common. Blood soon develop consumer whom. Science fear book.\nLife memory avoid should image. Training reduce American wait hear TV bit deep. Increase discover whatever center.",
+        "numero_pistas": 6473,
+        "sello_discografico": "Never whom year beautiful edge all good. Down oil assume they issue us."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 12,
+    "fields": {
+        "album": 15,
+        "productor": "Information speech form check. Everything side development writer argue. Lawyer floor feeling need throughout respond from. Center something federal crime himself.",
+        "estudio_grabacion": "Trade once material eat rather certainly language hot. Go pattern physical mind popular ask current.\nPattern evening several party campaign institution. Upon must away put cause the.",
+        "numero_pistas": 32008,
+        "sello_discografico": "Plant inside high bank interview. Capital morning attack. Be open huge age."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 13,
+    "fields": {
+        "album": 19,
+        "productor": "Cover how tell personal he store. What large interesting view fear.\nMoney provide about bring plant. Protect become generation appear identify.",
+        "estudio_grabacion": "Type bill record learn. Tv model own guy husband movement. Nothing foot measure thousand.",
+        "numero_pistas": 1423,
+        "sello_discografico": "Participant cover two lay thus. Arrive community maintain once practice. Body civil conference."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 14,
+    "fields": {
+        "album": 12,
+        "productor": "Serve question statement heavy position financial. Whom trial me vote always daughter available change. North add exist often.",
+        "estudio_grabacion": "Laugh really well billion nation entire. Training sister all out dark. Floor record member environmental east card consumer.",
+        "numero_pistas": 24789,
+        "sello_discografico": "President sometimes focus old front year. Shake news responsibility tree stock."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 15,
+    "fields": {
+        "album": 10,
+        "productor": "Agree perform wall use front story. Take economic walk mouth change. One total important meeting Republican doctor.",
+        "estudio_grabacion": "Former establish weight everything fill attention painting evidence. Employee loss land your record really. Base today federal listen produce of.",
+        "numero_pistas": 16388,
+        "sello_discografico": "Simple fact forget story low town become. Million beautiful else marriage kitchen arrive."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 16,
+    "fields": {
+        "album": 20,
+        "productor": "Environmental win successful occur wait board choose. Coach color feel. Dream story stand low take.\nPretty research whole law protect focus sit. Yes open upon small put.",
+        "estudio_grabacion": "Wide able issue.\nFollow effect discussion have. Quickly her mouth point kid view common. Single same resource produce.",
+        "numero_pistas": 4230,
+        "sello_discografico": "Station former sport center group. Or letter none unit tree. Know product kid environmental cover."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 17,
+    "fields": {
+        "album": 7,
+        "productor": "Citizen dream with effect recently simple than. Total day between whose decision western cup. Your born build the he remember.\nFocus give door can. Conference which unit break ground.",
+        "estudio_grabacion": "Apply instead surface better PM seat process. Sound onto election over. Eye almost force effect past.\nThing leave purpose. Interest single develop themselves.\nSea continue perhaps he president.",
+        "numero_pistas": 29867,
+        "sello_discografico": "Around especially itself. Think strong public wish system."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 18,
+    "fields": {
+        "album": 14,
+        "productor": "Short probably run Congress while. End size past family truth clear.\nShort figure mother fight organization record everyone. Situation technology practice site.",
+        "estudio_grabacion": "Police population four investment success. Feeling coach statement pressure development last special.\nInternational off develop.",
+        "numero_pistas": 3803,
+        "sello_discografico": "Agree say major win available sign paper. Feel crime energy prepare worker year."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 19,
+    "fields": {
+        "album": 17,
+        "productor": "Sport health local green. Mention off official media.\nParent way choose tree more. Expect pretty painting series have program painting top. Rate article attack data. Unit popular daughter defense.",
+        "estudio_grabacion": "Where week myself record. Coach serious wife itself picture away. Movement data fly machine yeah sense exactly.\nScore quality world it here. Back single past quickly draw with. Wrong relate ok turn.",
+        "numero_pistas": 12097,
+        "sello_discografico": "Close add free radio. Trip especially wait section family employee. Lawyer tree as."
+    }
+},
+{
+    "model": "socialSound.detallealbum",
+    "pk": 20,
+    "fields": {
+        "album": 11,
+        "productor": "Member sport government whose south. One number finish company. What week across skin let surface protect.",
+        "estudio_grabacion": "Act common gun reach. Hot someone also that image allow training adult. Risk administration inside citizen improve.\nTreat per top especially quite. Feeling me blood song effort also better large.",
+        "numero_pistas": 3177,
+        "sello_discografico": "Employee return best sell raise technology late. Usually hot success pass."
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 1,
+    "fields": {
+        "album": 3,
+        "reproducciones": 8293,
+        "likes": 25396,
+        "comentarios": 30283
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 2,
+    "fields": {
+        "album": 6,
+        "reproducciones": 6696,
+        "likes": 10564,
+        "comentarios": 4049
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 3,
+    "fields": {
+        "album": 11,
+        "reproducciones": 26776,
+        "likes": 18676,
+        "comentarios": 6431
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 4,
+    "fields": {
+        "album": 20,
+        "reproducciones": 12358,
+        "likes": 21603,
+        "comentarios": 10446
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 5,
+    "fields": {
+        "album": 18,
+        "reproducciones": 30634,
+        "likes": 17414,
+        "comentarios": 30898
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 6,
+    "fields": {
+        "album": 15,
+        "reproducciones": 20408,
+        "likes": 22451,
+        "comentarios": 5833
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 7,
+    "fields": {
+        "album": 17,
+        "reproducciones": 25043,
+        "likes": 9710,
+        "comentarios": 6192
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 8,
+    "fields": {
+        "album": 4,
+        "reproducciones": 25638,
+        "likes": 30205,
+        "comentarios": 6103
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 9,
+    "fields": {
+        "album": 1,
+        "reproducciones": 16866,
+        "likes": 19225,
+        "comentarios": 14990
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 10,
+    "fields": {
+        "album": 2,
+        "reproducciones": 1037,
+        "likes": 8248,
+        "comentarios": 32658
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 11,
+    "fields": {
+        "album": 10,
+        "reproducciones": 7019,
+        "likes": 3738,
+        "comentarios": 18753
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 12,
+    "fields": {
+        "album": 12,
+        "reproducciones": 19626,
+        "likes": 17058,
+        "comentarios": 25253
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 13,
+    "fields": {
+        "album": 13,
+        "reproducciones": 20444,
+        "likes": 3063,
+        "comentarios": 6349
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 14,
+    "fields": {
+        "album": 7,
+        "reproducciones": 3130,
+        "likes": 20630,
+        "comentarios": 19647
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 15,
+    "fields": {
+        "album": 16,
+        "reproducciones": 26016,
+        "likes": 15761,
+        "comentarios": 25927
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 16,
+    "fields": {
+        "album": 5,
+        "reproducciones": 22948,
+        "likes": 4661,
+        "comentarios": 31150
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 17,
+    "fields": {
+        "album": 19,
+        "reproducciones": 25432,
+        "likes": 17183,
+        "comentarios": 28779
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 18,
+    "fields": {
+        "album": 14,
+        "reproducciones": 15274,
+        "likes": 4259,
+        "comentarios": 29753
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 19,
+    "fields": {
+        "album": 8,
+        "reproducciones": 4809,
+        "likes": 31462,
+        "comentarios": 29375
+    }
+},
+{
+    "model": "socialSound.estadisticasalbum",
+    "pk": 20,
+    "fields": {
+        "album": 9,
+        "reproducciones": 19321,
+        "likes": 16656,
+        "comentarios": 4577
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 1,
+    "fields": {
+        "etiqueta": "blues",
+        "titulo": "Dark expert Congress course. Behind develop job agreement reveal some try. Still entire physical upon ask already church. Really machine themselves production paper.",
+        "artista": "Think themselves interesting bar. Today player miss guy. Soon stay recent choice defense run.",
+        "archivo_audio": "yourself.wav",
+        "portada": "throw.mp4",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 2,
+        "album": 16,
+        "reposts": [
+            16,
+            19
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 2,
+    "fields": {
+        "etiqueta": "drill",
+        "titulo": "Such somebody moment. Imagine form off say late subject process.\nReason cause hair summer threat. Senior human response capital require. Choose bring write admit fire she.",
+        "artista": "Anything little product exist detail. Side perhaps baby successful standard.",
+        "archivo_audio": "keep.flac",
+        "portada": "sell.mp4",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 13,
+        "album": 2,
+        "reposts": [
+            17
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 3,
+    "fields": {
+        "etiqueta": "christian",
+        "titulo": "Blue pattern build indicate small health design. Grow scientist show education board where southern. Necessary air surface defense station method.\nAir song herself camera half writer conference.",
+        "artista": "Scientist center son simply. Pattern require item street accept there choose particularly.",
+        "archivo_audio": "case.wav",
+        "portada": "two.bmp",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 13,
+        "album": 15,
+        "reposts": [
+            2,
+            8
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 4,
+    "fields": {
+        "etiqueta": "ambient",
+        "titulo": "Figure indicate box air school. Choice environmental game either. Require safe represent best.\nStand experience none level. Page speech myself left first agree move.",
+        "artista": "Young dinner summer do. Scene guess everyone billion young. Performance age look structure design.",
+        "archivo_audio": "yeah.flac",
+        "portada": "history.gif",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 1,
+        "album": 9,
+        "reposts": [
+            2,
+            4,
+            7,
+            19
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 5,
+    "fields": {
+        "etiqueta": "dance",
+        "titulo": "Unit could quality finally. School minute window quite chair cultural opportunity. Hit rest Mrs reveal.",
+        "artista": "Popular me city management check everyone. Also son sport old base whom.",
+        "archivo_audio": "magazine.webm",
+        "portada": "only.wav",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 6,
+        "album": 7,
+        "reposts": [
+            6,
+            17
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 6,
+    "fields": {
+        "etiqueta": "latin",
+        "titulo": "Whom bring five late close candidate without.\nCongress speech lead language involve. Successful health program free concern image glass career.",
+        "artista": "Real base adult who. College able safe increase.",
+        "archivo_audio": "gas.jpeg",
+        "portada": "per.mp4",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 11,
+        "album": 2,
+        "reposts": [
+            1,
+            17,
+            18
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 7,
+    "fields": {
+        "etiqueta": "world",
+        "titulo": "Fly cover spring its fill inside final. Me general door child fall lead air.\nSoldier computer shake use. Table yourself apply throw big car. Join now almost direction kitchen crime.",
+        "artista": "Front toward of maintain three plant. Song when change hair organization.",
+        "archivo_audio": "public.bmp",
+        "portada": "happy.tiff",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 9,
+        "album": 11,
+        "reposts": [
+            6,
+            7,
+            17
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 8,
+    "fields": {
+        "etiqueta": "salsa",
+        "titulo": "Option also medical three clear. Technology news relate there standard. Well organization across bill pick day former.",
+        "artista": "Police school yes set responsibility. Bring front less business.",
+        "archivo_audio": "instead.css",
+        "portada": "head.wav",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 15,
+        "album": 10,
+        "reposts": [
+            5,
+            11,
+            17,
+            18
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 9,
+    "fields": {
+        "etiqueta": "hardrock",
+        "titulo": "Impact move player good end. Couple gas since method response adult. End eight job try your everything.",
+        "artista": "Better offer two enter. Race radio join.",
+        "archivo_audio": "draw.mp4",
+        "portada": "west.gif",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 20,
+        "album": 19,
+        "reposts": [
+            2,
+            3,
+            10,
+            16,
+            17
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 10,
+    "fields": {
+        "etiqueta": "glitch",
+        "titulo": "Issue magazine full tell condition. Performance improve almost successful.",
+        "artista": "Likely high owner heavy yeah herself back small. Major because other simple hundred.",
+        "archivo_audio": "understand.css",
+        "portada": "note.json",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 12,
+        "album": 8,
+        "reposts": [
+            20
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 11,
+    "fields": {
+        "etiqueta": "opera",
+        "titulo": "Nothing authority star blue suffer set health join. Decision worker along huge rather soldier.\nDescribe door while.",
+        "artista": "Vote idea large. Possible image safe hand.",
+        "archivo_audio": "design.gif",
+        "portada": "year.bmp",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 19,
+        "album": 17,
+        "reposts": [
+            4,
+            10,
+            11,
+            15,
+            19
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 12,
+    "fields": {
+        "etiqueta": "indie",
+        "titulo": "Protect open performance various they list final. Newspaper task fact.",
+        "artista": "Story who during no. Trip table space figure under including wall.",
+        "archivo_audio": "general.flac",
+        "portada": "onto.jpeg",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 7,
+        "album": 7,
+        "reposts": [
+            5,
+            6,
+            8,
+            16
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 13,
+    "fields": {
+        "etiqueta": "country",
+        "titulo": "Yourself price state country usually. Participant price rich ever experience. Million hear recent buy.\nPrepare view bad under. Themselves win suddenly political.",
+        "artista": "Similar they especially child. Result race bill. Yet side street south high would degree.",
+        "archivo_audio": "set.mov",
+        "portada": "west.html",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 5,
+        "album": 7,
+        "reposts": [
+            4,
+            17,
+            18
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 14,
+    "fields": {
+        "etiqueta": "progressivehouse",
+        "titulo": "Candidate apply page power garden life perform safe. Pressure common walk design community foot. You receive structure.",
+        "artista": "True plant majority husband camera myself special. Cold within by baby.",
+        "archivo_audio": "only.html",
+        "portada": "wall.webm",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 15,
+        "album": 6,
+        "reposts": [
+            7,
+            9,
+            10,
+            19
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 15,
+    "fields": {
+        "etiqueta": "salsa",
+        "titulo": "Form possible top read eat. These land start. Parent out ago middle remain.\nAlong visit leg yeah week ground its. Generation memory product food decision more past. Focus drug guy own middle.",
+        "artista": "Dog four over light control. Because name audience field pull before old. House would nearly fight.",
+        "archivo_audio": "edge.png",
+        "portada": "speech.bmp",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 17,
+        "album": 9,
+        "reposts": [
+            6,
+            9,
+            10,
+            13
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 16,
+    "fields": {
+        "etiqueta": "soul",
+        "titulo": "Indeed rule central possible others.\nHistory all listen send total. Smile box race my.\nSometimes him author research leg analysis.\nQuickly great per control grow to.",
+        "artista": "Group least daughter explain then hair middle. Too just smile imagine.",
+        "archivo_audio": "assume.html",
+        "portada": "true.png",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 8,
+        "album": 4,
+        "reposts": [
+            3,
+            5,
+            9,
+            19
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 17,
+    "fields": {
+        "etiqueta": "dancehall",
+        "titulo": "Hotel point finish rather animal imagine. College read technology policy eight for.\nGreen left PM build second bring. Heart usually act cup.",
+        "artista": "Rich difference seem close take top institution.",
+        "archivo_audio": "art.txt",
+        "portada": "explain.json",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 11,
+        "album": 4,
+        "reposts": [
+            11,
+            13,
+            18
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 18,
+    "fields": {
+        "etiqueta": "chillout",
+        "titulo": "Enough administration customer item. Industry behind start case attorney about quite. Indeed tough avoid commercial or we.\nProve draw successful body exist. Truth road risk.",
+        "artista": "Look environmental compare social those.",
+        "archivo_audio": "author.js",
+        "portada": "at.bmp",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 12,
+        "album": 9,
+        "reposts": [
+            3,
+            17,
+            20
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 19,
+    "fields": {
+        "etiqueta": "soul",
+        "titulo": "Or difference view. Size above director finish. Them fight several work east resource.",
+        "artista": "Hair mean season treat because. Ground drug area share. Push both although size dinner trial.",
+        "archivo_audio": "agreement.avi",
+        "portada": "something.png",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 4,
+        "album": 15,
+        "reposts": [
+            1
+        ]
+    }
+},
+{
+    "model": "socialSound.cancion",
+    "pk": 20,
+    "fields": {
+        "etiqueta": "blues",
+        "titulo": "Some look water power not. Leg but determine scientist read ground consumer meeting. Resource certain central road statement.\nSister more instead floor determine.",
+        "artista": "Argue middle agency. Third push law dinner near.",
+        "archivo_audio": "stop.html",
+        "portada": "everyone.avi",
+        "fecha_subida": "2024-10-20T22:34:37.777",
+        "usuario": 10,
+        "album": 9,
+        "reposts": [
+            14,
+            15,
+            19
+        ]
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 1,
+    "fields": {
+        "cancion": 10,
+        "letra": "Window hair some. Month wind performance section behind remain. Edge maybe safe voice pressure she.",
+        "creditos": "It support resource section certainly. Practice ever respond own practice course. Time network program mean.\nGoal up energy none. Move her magazine letter.",
+        "duracion": "5112 18:48:22",
+        "idioma": "Yeah step image animal defense carry TV."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 2,
+    "fields": {
+        "cancion": 8,
+        "letra": "Large soldier discover dog bill story watch. Many leave occur about thank.\nScientist movement suggest site believe easy. To dream deep firm.",
+        "creditos": "Doctor fish allow room. Cause series four soldier half.",
+        "duracion": "10958 04:52:06",
+        "idioma": "Mouth wall program field."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 3,
+    "fields": {
+        "cancion": 15,
+        "letra": "Science memory rise major. Cell alone kitchen mention develop.\nCentral style help inside. Sea station board morning third gas.",
+        "creditos": "Everyone sell beyond can role. Wind onto read play month. Order into party push person make. Official fast analysis candidate everybody join for.",
+        "duracion": "5028 21:28:52",
+        "idioma": "Part here create explain job."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 4,
+    "fields": {
+        "cancion": 11,
+        "letra": "Debate financial growth upon. Difficult general appear the require indicate who.\nHair group arm of.\nFill TV skin fish president life boy. Whatever shoulder size sit stage follow miss.",
+        "creditos": "Fine specific while growth letter program. Green seven news join. Become technology tree necessary.",
+        "duracion": "16246 21:51:02",
+        "idioma": "Food major material season final dog."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 5,
+    "fields": {
+        "cancion": 14,
+        "letra": "Citizen huge room service. Play part everyone never likely serve. Give draw act plan.\nPosition budget right door. Because order lose agency production. Ahead turn life within.",
+        "creditos": "Finally compare investment hot state toward. Traditional character oil machine degree day product my. Ever fight rock.\nReflect writer him wish cell make. Until production those nation western follow.",
+        "duracion": "19342 23:24:29",
+        "idioma": "Young board service happen team magazine old."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 6,
+    "fields": {
+        "cancion": 20,
+        "letra": "Country senior score might ever close man onto. Industry born voice court for. Strategy American expect. Final office make increase art.",
+        "creditos": "Research son thus consumer. Body media gas create.\nAgent nearly into could kitchen. Claim camera phone indeed.\nLaw new there election air worry actually region. Recognize decision yet its trip.",
+        "duracion": "8118 16:10:44",
+        "idioma": "Clearly dark research information."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 7,
+    "fields": {
+        "cancion": 13,
+        "letra": "Hair difference camera create. Before specific seek. Summer trouble them road town hundred particular different. Avoid card fine wait subject person find.",
+        "creditos": "Serve drive their each. Talk foot activity gun glass fish. Doctor impact rich camera little even.",
+        "duracion": "14447 11:44:51",
+        "idioma": "My month quite read cover."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 8,
+    "fields": {
+        "cancion": 17,
+        "letra": "Glass industry television practice rock adult tax floor. Speech doctor ever pass join population seem seat. Another know scientist drive bill present.",
+        "creditos": "Effect seek civil. Tree bring something century trade old hotel finish.",
+        "duracion": "7844 18:42:46",
+        "idioma": "Development believe foot skill strong."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 9,
+    "fields": {
+        "cancion": 7,
+        "letra": "Suffer last voice artist method. Keep behavior physical could eight nice up. Economy specific move none fly statement describe.",
+        "creditos": "Represent front into type success eat. Me difficult thousand. Set technology could car sure on.\nChance major hear know. Want authority detail option. Assume wall life simply begin book.",
+        "duracion": "2969 03:45:19",
+        "idioma": "Determine test hot decade."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 10,
+    "fields": {
+        "cancion": 2,
+        "letra": "Include scene wish single doctor toward investment. Road force left watch. Indicate position later wife bill sometimes.",
+        "creditos": "Discuss almost former hour. Also lead yes tough partner make. State foot special interview middle thought. Fish foot remain which night certainly accept.",
+        "duracion": "18511 00:51:45",
+        "idioma": "Tend agree impact across."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 11,
+    "fields": {
+        "cancion": 4,
+        "letra": "Medical lawyer during house about matter within heavy. Now trouble vote gas.\nEach tend across PM. Often hair daughter hair small point employee.",
+        "creditos": "Kid yes realize foreign others American. Material author color.\nDecision organization perform behavior. Rest on performance discuss loss or daughter. Card rule better total network.",
+        "duracion": "380 03:44:49",
+        "idioma": "Pick state might when the foreign."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 12,
+    "fields": {
+        "cancion": 5,
+        "letra": "Deep owner red beyond begin present young. Technology control purpose effect.\nNext edge outside tree.",
+        "creditos": "Remain past treat pay. Wait let head rest month economy. Those nor impact fear maintain people.\nMission five television life off. Form message phone. Agreement imagine way section common position.",
+        "duracion": "3171 01:29:40",
+        "idioma": "Fill point suddenly court ability somebody gas."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 13,
+    "fields": {
+        "cancion": 19,
+        "letra": "Tend play because indicate low yet then. Agreement item who avoid very present. See standard happen table nor.",
+        "creditos": "Large design leg. Nation machine expert list read. Hospital federal including fight never argue next person.",
+        "duracion": "4243 00:43:54",
+        "idioma": "Eat catch nearly cold think speech."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 14,
+    "fields": {
+        "cancion": 18,
+        "letra": "All data yourself whose.\nIndeed probably camera. Maintain economic particularly agent none about. Call wind debate likely ago once.\nThus approach pass four. Cut television knowledge bad.",
+        "creditos": "Past guess build research enough red. Others inside seem remain.\nFormer PM happy quality suffer factor. Camera early easy determine.",
+        "duracion": "16548 15:47:55",
+        "idioma": "Away home ask then state moment."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 15,
+    "fields": {
+        "cancion": 1,
+        "letra": "Debate usually ball different radio certainly. Play hand discussion.\nMouth cost high fish eat resource sure. Mrs young along whatever.",
+        "creditos": "Set behind film serve goal. Few thing last important individual pay baby.\nAllow around none environmental car either.\nStage small nation ready adult short. Thank play night moment serve.",
+        "duracion": "18373 10:05:04",
+        "idioma": "Set else wind possible."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 16,
+    "fields": {
+        "cancion": 12,
+        "letra": "Thing right about law unit think. Local of gas fine main until. Require agent control today note century. Book able drive huge.",
+        "creditos": "Mind marriage again. Majority prevent past budget try expect whatever.\nStandard role beat medical. Four leader upon you.\nOpen see turn how also. Might house create thing economy white.",
+        "duracion": "14434 15:02:40",
+        "idioma": "Important well season prevent."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 17,
+    "fields": {
+        "cancion": 3,
+        "letra": "Born kitchen cold face make. Process member both price put situation. Successful before class tax.\nExperience edge speak drug. Lead admit floor write subject.",
+        "creditos": "Civil stop heart of control admit. Music down important image. Inside there believe whether.\nShe lay two argue. Environment floor little last me.",
+        "duracion": "16705 06:02:39",
+        "idioma": "Whole popular stay meeting market me."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 18,
+    "fields": {
+        "cancion": 16,
+        "letra": "State claim especially over. Region difficult state friend learn song write. Short because statement.\nPerson southern will traditional control blue social. Then else low public which.",
+        "creditos": "Board art some ok. Reality too speech audience perform. Agreement score growth do eight create lot.",
+        "duracion": "18315 20:18:56",
+        "idioma": "Close low travel last article clearly."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 19,
+    "fields": {
+        "cancion": 6,
+        "letra": "Discussion before hot approach. Admit require charge cup run popular chair. Turn remember TV address between seem performance.",
+        "creditos": "Lead answer lead artist large. Old use which. Left mind arm laugh body morning. Vote toward again real.\nOperation participant wish. Know this describe hit goal system quickly.",
+        "duracion": "4886 21:53:12",
+        "idioma": "Final hand most."
+    }
+},
+{
+    "model": "socialSound.detallecancion",
+    "pk": 20,
+    "fields": {
+        "cancion": 9,
+        "letra": "Recent training tough animal that. Play quality fall beautiful yet he within expert. Cover lead soon either successful understand.\nFish move interview institution. Attack determine degree customer.",
+        "creditos": "Again form leader agent range else. Director professor before trial at traditional want. Minute worker a catch agent system politics.",
+        "duracion": "11505 05:28:16",
+        "idioma": "Same him level hot respond."
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 1,
+    "fields": {
+        "nombre": "Life challenge just. Poor really rule lead.\nGas choice suffer than offer lot.",
+        "descripcion": "Election executive thank successful federal. Challenge lead sort culture take. Seek statement poor.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 16,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 2,
+    "fields": {
+        "nombre": "Parent my this bring. Under whether age again hold. Quality it realize dinner capital seek walk.",
+        "descripcion": "Represent I discuss drop population candidate light. Box floor receive fact whose our.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 12,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 3,
+    "fields": {
+        "nombre": "Building ready society me government then star.",
+        "descripcion": "Trip ground strong near edge professional soldier. Start world before education wish evening themselves.\nSomething by real where play. Course total either paper. Through capital another simply.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 4,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 4,
+    "fields": {
+        "nombre": "Recently effect later. Spring stuff effect blood be. So rich though.",
+        "descripcion": "Drop write easy health value laugh put. Many important fine baby behavior. Successful speech total pay late.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 11,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 5,
+    "fields": {
+        "nombre": "For population across to art stuff door remember. Hold painting able movie.",
+        "descripcion": "And town west model. Cell set hear agency house. Morning reality coach answer.\nThemselves sing necessary base national move. Son stock bar station tough.\nTreatment consumer marriage eye character.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 20,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 6,
+    "fields": {
+        "nombre": "Rest keep training such deep them. One interesting matter.",
+        "descripcion": "Behind you send compare shoulder all. Moment new effect no.\nFactor western own experience. Save whether firm news write sit require. Close discover radio prepare strong.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 8,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 7,
+    "fields": {
+        "nombre": "Nearly charge season smile detail all. Age quite head sit.",
+        "descripcion": "Stock voice power cause prove. Very same paper view blood direction candidate mouth.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 15,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 8,
+    "fields": {
+        "nombre": "Wait billion it pick. Question democratic painting necessary production. Sign product person issue.",
+        "descripcion": "Authority attack buy sign she everything. Several mind teacher our campaign.\nTonight top process task prepare box. Interview experience information guy expect.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 3,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 9,
+    "fields": {
+        "nombre": "Poor box seat smile unit. War according present cover poor.",
+        "descripcion": "Full argue road see authority. Stuff everybody choose occur teacher. Remain song president every.\nSecurity court concern camera lawyer. Detail role hospital alone report team.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 3,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 10,
+    "fields": {
+        "nombre": "Produce with pretty culture service paper daughter. How season very chance.",
+        "descripcion": "Stay often hot tonight baby. Ball gas year.\nMessage care seem whatever news range. Accept listen condition reduce. Hundred check pull me traditional year.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 11,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 11,
+    "fields": {
+        "nombre": "Amount ask sister theory. Ten first coach majority provide example. Fill according appear reflect.",
+        "descripcion": "Choose represent federal conference race PM.\nPattern their rise hundred attention opportunity. Partner experience national true avoid.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 7,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 12,
+    "fields": {
+        "nombre": "Popular high design experience air.",
+        "descripcion": "Recently would suffer history guy woman. Site character mean effect choice resource like.\nParticularly establish yet heavy use. Contain side upon often painting happen.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 9,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 13,
+    "fields": {
+        "nombre": "Ask police rock provide bar general. Treatment test any third usually issue push.",
+        "descripcion": "Use blood whole actually turn view your nature. Catch tell with hospital same rate woman.\nDecide Mr range describe question reveal sit. Model own west. Detail sure especially push face.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 6,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 14,
+    "fields": {
+        "nombre": "Top three father hundred. Tax record beyond participant.",
+        "descripcion": "Head sort drop assume cost leave. Rest realize those mother why.\nFoot east hit better. Quality particularly now maintain remain stand responsibility.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 8,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 15,
+    "fields": {
+        "nombre": "Live assume bed wall kind only. Anyone friend space least population.",
+        "descripcion": "Follow hour executive prepare report north. Foot cover child number here.\nTown from scientist claim. Less lose business Democrat term thing.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 5,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 16,
+    "fields": {
+        "nombre": "Of accept when. World blue sometimes that listen professor include. Hear service tonight.",
+        "descripcion": "Discussion place would find its hear. Race lawyer down third. Job leg reality street become final.\nPush yard machine force huge would education. Capital appear nice grow smile.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 10,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 17,
+    "fields": {
+        "nombre": "High gas professor similar. Same believe probably economic attack.",
+        "descripcion": "Economy receive outside sea she. Husband focus matter best situation she. Crime agency simply color provide cultural clear.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 9,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 18,
+    "fields": {
+        "nombre": "Represent organization community question discuss every. Ago find within structure power.",
+        "descripcion": "Region follow have power around let else see. Daughter political simple thing detail.\nListen compare factor forward. Dream head before low section six.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 18,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 19,
+    "fields": {
+        "nombre": "Hospital member language kind. Behavior cell human maybe.",
+        "descripcion": "Born morning sometimes PM. Especially door national size wonder dog pressure. Final great third week consider also fact less.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 5,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.playlist",
+    "pk": 20,
+    "fields": {
+        "nombre": "Form argue develop fast prevent cut. Manage movement serious its daughter upon baby feeling.",
+        "descripcion": "Term whole career tell weight avoid experience. Evidence summer series chair night.",
+        "fecha_creacion": "2024-10-20T22:34:37.780",
+        "usuario": 15,
+        "publica": true
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 1,
+    "fields": {
+        "cancion": 20,
+        "playlist": 1,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.692"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 2,
+    "fields": {
+        "cancion": 17,
+        "playlist": 2,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.707"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 3,
+    "fields": {
+        "cancion": 11,
+        "playlist": 2,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.709"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 4,
+    "fields": {
+        "cancion": 20,
+        "playlist": 3,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.724"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 5,
+    "fields": {
+        "cancion": 6,
+        "playlist": 3,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.726"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 6,
+    "fields": {
+        "cancion": 7,
+        "playlist": 3,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.728"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 7,
+    "fields": {
+        "cancion": 3,
+        "playlist": 3,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.730"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 8,
+    "fields": {
+        "cancion": 8,
+        "playlist": 3,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.732"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 9,
+    "fields": {
+        "cancion": 12,
+        "playlist": 4,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.745"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 10,
+    "fields": {
+        "cancion": 18,
+        "playlist": 5,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.760"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 11,
+    "fields": {
+        "cancion": 20,
+        "playlist": 5,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.762"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 12,
+    "fields": {
+        "cancion": 1,
+        "playlist": 5,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.764"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 13,
+    "fields": {
+        "cancion": 17,
+        "playlist": 6,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.777"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 14,
+    "fields": {
+        "cancion": 6,
+        "playlist": 6,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.778"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 15,
+    "fields": {
+        "cancion": 5,
+        "playlist": 6,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 16,
+    "fields": {
+        "cancion": 15,
+        "playlist": 7,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.795"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 17,
+    "fields": {
+        "cancion": 14,
+        "playlist": 7,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.797"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 18,
+    "fields": {
+        "cancion": 13,
+        "playlist": 7,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.799"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 19,
+    "fields": {
+        "cancion": 1,
+        "playlist": 7,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.801"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 20,
+    "fields": {
+        "cancion": 8,
+        "playlist": 7,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.803"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 21,
+    "fields": {
+        "cancion": 3,
+        "playlist": 8,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.822"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 22,
+    "fields": {
+        "cancion": 17,
+        "playlist": 9,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.835"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 23,
+    "fields": {
+        "cancion": 4,
+        "playlist": 9,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.836"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 24,
+    "fields": {
+        "cancion": 5,
+        "playlist": 9,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.837"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 25,
+    "fields": {
+        "cancion": 3,
+        "playlist": 9,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.838"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 26,
+    "fields": {
+        "cancion": 16,
+        "playlist": 10,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.851"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 27,
+    "fields": {
+        "cancion": 11,
+        "playlist": 10,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.852"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 28,
+    "fields": {
+        "cancion": 12,
+        "playlist": 10,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.853"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 29,
+    "fields": {
+        "cancion": 19,
+        "playlist": 10,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.854"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 30,
+    "fields": {
+        "cancion": 7,
+        "playlist": 11,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.865"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 31,
+    "fields": {
+        "cancion": 18,
+        "playlist": 11,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.867"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 32,
+    "fields": {
+        "cancion": 18,
+        "playlist": 12,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.877"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 33,
+    "fields": {
+        "cancion": 6,
+        "playlist": 12,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.878"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 34,
+    "fields": {
+        "cancion": 5,
+        "playlist": 12,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.879"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 35,
+    "fields": {
+        "cancion": 12,
+        "playlist": 12,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.880"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 36,
+    "fields": {
+        "cancion": 14,
+        "playlist": 13,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.889"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 37,
+    "fields": {
+        "cancion": 3,
+        "playlist": 13,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.890"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 38,
+    "fields": {
+        "cancion": 19,
+        "playlist": 13,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.891"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 39,
+    "fields": {
+        "cancion": 10,
+        "playlist": 13,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.892"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 40,
+    "fields": {
+        "cancion": 13,
+        "playlist": 13,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.893"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 41,
+    "fields": {
+        "cancion": 5,
+        "playlist": 14,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.901"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 42,
+    "fields": {
+        "cancion": 6,
+        "playlist": 14,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.902"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 43,
+    "fields": {
+        "cancion": 8,
+        "playlist": 15,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.911"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 44,
+    "fields": {
+        "cancion": 2,
+        "playlist": 15,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.912"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 45,
+    "fields": {
+        "cancion": 13,
+        "playlist": 15,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.913"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 46,
+    "fields": {
+        "cancion": 6,
+        "playlist": 15,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.914"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 47,
+    "fields": {
+        "cancion": 6,
+        "playlist": 16,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.923"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 48,
+    "fields": {
+        "cancion": 14,
+        "playlist": 16,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.924"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 49,
+    "fields": {
+        "cancion": 9,
+        "playlist": 17,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.936"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 50,
+    "fields": {
+        "cancion": 14,
+        "playlist": 17,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.937"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 51,
+    "fields": {
+        "cancion": 8,
+        "playlist": 18,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.947"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 52,
+    "fields": {
+        "cancion": 18,
+        "playlist": 18,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.948"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 53,
+    "fields": {
+        "cancion": 5,
+        "playlist": 19,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.958"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 54,
+    "fields": {
+        "cancion": 12,
+        "playlist": 19,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.959"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 55,
+    "fields": {
+        "cancion": 10,
+        "playlist": 19,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.961"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 56,
+    "fields": {
+        "cancion": 4,
+        "playlist": 20,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.972"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 57,
+    "fields": {
+        "cancion": 16,
+        "playlist": 20,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.973"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 58,
+    "fields": {
+        "cancion": 12,
+        "playlist": 20,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.974"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 59,
+    "fields": {
+        "cancion": 2,
+        "playlist": 20,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.975"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 60,
+    "fields": {
+        "cancion": 19,
+        "playlist": 20,
+        "orden": 0,
+        "fecha_agregada": "2024-10-20T22:34:39.976"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 61,
+    "fields": {
+        "cancion": 11,
+        "playlist": 16,
+        "orden": 11764,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 62,
+    "fields": {
+        "cancion": 2,
+        "playlist": 10,
+        "orden": 27239,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 63,
+    "fields": {
+        "cancion": 14,
+        "playlist": 11,
+        "orden": 5949,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 64,
+    "fields": {
+        "cancion": 10,
+        "playlist": 1,
+        "orden": 13886,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 65,
+    "fields": {
+        "cancion": 17,
+        "playlist": 15,
+        "orden": 22124,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 66,
+    "fields": {
+        "cancion": 5,
+        "playlist": 10,
+        "orden": 16396,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 67,
+    "fields": {
+        "cancion": 5,
+        "playlist": 8,
+        "orden": 2753,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 68,
+    "fields": {
+        "cancion": 14,
+        "playlist": 18,
+        "orden": 1783,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 69,
+    "fields": {
+        "cancion": 6,
+        "playlist": 19,
+        "orden": 4731,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 70,
+    "fields": {
+        "cancion": 16,
+        "playlist": 4,
+        "orden": 5315,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 71,
+    "fields": {
+        "cancion": 8,
+        "playlist": 6,
+        "orden": 31133,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 72,
+    "fields": {
+        "cancion": 20,
+        "playlist": 4,
+        "orden": 27168,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 73,
+    "fields": {
+        "cancion": 13,
+        "playlist": 2,
+        "orden": 18408,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 74,
+    "fields": {
+        "cancion": 11,
+        "playlist": 15,
+        "orden": 20308,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 75,
+    "fields": {
+        "cancion": 13,
+        "playlist": 11,
+        "orden": 21181,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 76,
+    "fields": {
+        "cancion": 18,
+        "playlist": 4,
+        "orden": 28494,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 77,
+    "fields": {
+        "cancion": 1,
+        "playlist": 1,
+        "orden": 19153,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 78,
+    "fields": {
+        "cancion": 13,
+        "playlist": 10,
+        "orden": 29681,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 79,
+    "fields": {
+        "cancion": 8,
+        "playlist": 11,
+        "orden": 3600,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.cancionplaylist",
+    "pk": 80,
+    "fields": {
+        "cancion": 2,
+        "playlist": 6,
+        "orden": 29434,
+        "fecha_agregada": "2024-10-20T22:34:37.780"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 1,
+    "fields": {
+        "usuario": 10,
+        "cancion": 1,
+        "fecha_like": "2024-10-20T22:34:38.127"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 2,
+    "fields": {
+        "usuario": 12,
+        "cancion": 1,
+        "fecha_like": "2024-10-20T22:34:38.128"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 3,
+    "fields": {
+        "usuario": 13,
+        "cancion": 1,
+        "fecha_like": "2024-10-20T22:34:38.129"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 4,
+    "fields": {
+        "usuario": 18,
+        "cancion": 2,
+        "fecha_like": "2024-10-20T22:34:38.142"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 5,
+    "fields": {
+        "usuario": 11,
+        "cancion": 2,
+        "fecha_like": "2024-10-20T22:34:38.143"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 6,
+    "fields": {
+        "usuario": 8,
+        "cancion": 2,
+        "fecha_like": "2024-10-20T22:34:38.144"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 7,
+    "fields": {
+        "usuario": 6,
+        "cancion": 2,
+        "fecha_like": "2024-10-20T22:34:38.145"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 8,
+    "fields": {
+        "usuario": 12,
+        "cancion": 3,
+        "fecha_like": "2024-10-20T22:34:38.157"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 9,
+    "fields": {
+        "usuario": 5,
+        "cancion": 3,
+        "fecha_like": "2024-10-20T22:34:38.158"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 10,
+    "fields": {
+        "usuario": 8,
+        "cancion": 3,
+        "fecha_like": "2024-10-20T22:34:38.159"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 11,
+    "fields": {
+        "usuario": 4,
+        "cancion": 4,
+        "fecha_like": "2024-10-20T22:34:38.171"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 12,
+    "fields": {
+        "usuario": 5,
+        "cancion": 4,
+        "fecha_like": "2024-10-20T22:34:38.173"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 13,
+    "fields": {
+        "usuario": 19,
+        "cancion": 4,
+        "fecha_like": "2024-10-20T22:34:38.173"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 14,
+    "fields": {
+        "usuario": 5,
+        "cancion": 5,
+        "fecha_like": "2024-10-20T22:34:38.188"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 15,
+    "fields": {
+        "usuario": 8,
+        "cancion": 5,
+        "fecha_like": "2024-10-20T22:34:38.189"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 16,
+    "fields": {
+        "usuario": 4,
+        "cancion": 5,
+        "fecha_like": "2024-10-20T22:34:38.189"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 17,
+    "fields": {
+        "usuario": 9,
+        "cancion": 5,
+        "fecha_like": "2024-10-20T22:34:38.190"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 18,
+    "fields": {
+        "usuario": 6,
+        "cancion": 6,
+        "fecha_like": "2024-10-20T22:34:38.202"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 19,
+    "fields": {
+        "usuario": 14,
+        "cancion": 6,
+        "fecha_like": "2024-10-20T22:34:38.203"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 20,
+    "fields": {
+        "usuario": 20,
+        "cancion": 7,
+        "fecha_like": "2024-10-20T22:34:38.215"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 21,
+    "fields": {
+        "usuario": 10,
+        "cancion": 7,
+        "fecha_like": "2024-10-20T22:34:38.216"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 22,
+    "fields": {
+        "usuario": 8,
+        "cancion": 8,
+        "fecha_like": "2024-10-20T22:34:38.230"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 23,
+    "fields": {
+        "usuario": 2,
+        "cancion": 8,
+        "fecha_like": "2024-10-20T22:34:38.231"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 24,
+    "fields": {
+        "usuario": 17,
+        "cancion": 8,
+        "fecha_like": "2024-10-20T22:34:38.231"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 25,
+    "fields": {
+        "usuario": 15,
+        "cancion": 8,
+        "fecha_like": "2024-10-20T22:34:38.232"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 26,
+    "fields": {
+        "usuario": 4,
+        "cancion": 8,
+        "fecha_like": "2024-10-20T22:34:38.233"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 27,
+    "fields": {
+        "usuario": 6,
+        "cancion": 9,
+        "fecha_like": "2024-10-20T22:34:38.243"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 28,
+    "fields": {
+        "usuario": 14,
+        "cancion": 10,
+        "fecha_like": "2024-10-20T22:34:38.256"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 29,
+    "fields": {
+        "usuario": 18,
+        "cancion": 10,
+        "fecha_like": "2024-10-20T22:34:38.257"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 30,
+    "fields": {
+        "usuario": 9,
+        "cancion": 11,
+        "fecha_like": "2024-10-20T22:34:38.268"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 31,
+    "fields": {
+        "usuario": 11,
+        "cancion": 11,
+        "fecha_like": "2024-10-20T22:34:38.269"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 32,
+    "fields": {
+        "usuario": 15,
+        "cancion": 11,
+        "fecha_like": "2024-10-20T22:34:38.269"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 33,
+    "fields": {
+        "usuario": 19,
+        "cancion": 12,
+        "fecha_like": "2024-10-20T22:34:38.284"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 34,
+    "fields": {
+        "usuario": 3,
+        "cancion": 12,
+        "fecha_like": "2024-10-20T22:34:38.285"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 35,
+    "fields": {
+        "usuario": 12,
+        "cancion": 12,
+        "fecha_like": "2024-10-20T22:34:38.285"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 36,
+    "fields": {
+        "usuario": 14,
+        "cancion": 12,
+        "fecha_like": "2024-10-20T22:34:38.286"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 37,
+    "fields": {
+        "usuario": 15,
+        "cancion": 12,
+        "fecha_like": "2024-10-20T22:34:38.287"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 38,
+    "fields": {
+        "usuario": 13,
+        "cancion": 13,
+        "fecha_like": "2024-10-20T22:34:38.298"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 39,
+    "fields": {
+        "usuario": 12,
+        "cancion": 13,
+        "fecha_like": "2024-10-20T22:34:38.299"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 40,
+    "fields": {
+        "usuario": 2,
+        "cancion": 13,
+        "fecha_like": "2024-10-20T22:34:38.300"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 41,
+    "fields": {
+        "usuario": 10,
+        "cancion": 13,
+        "fecha_like": "2024-10-20T22:34:38.300"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 42,
+    "fields": {
+        "usuario": 20,
+        "cancion": 14,
+        "fecha_like": "2024-10-20T22:34:38.314"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 43,
+    "fields": {
+        "usuario": 9,
+        "cancion": 15,
+        "fecha_like": "2024-10-20T22:34:38.326"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 44,
+    "fields": {
+        "usuario": 15,
+        "cancion": 15,
+        "fecha_like": "2024-10-20T22:34:38.327"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 45,
+    "fields": {
+        "usuario": 4,
+        "cancion": 16,
+        "fecha_like": "2024-10-20T22:34:38.341"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 46,
+    "fields": {
+        "usuario": 11,
+        "cancion": 16,
+        "fecha_like": "2024-10-20T22:34:38.343"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 47,
+    "fields": {
+        "usuario": 2,
+        "cancion": 17,
+        "fecha_like": "2024-10-20T22:34:38.354"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 48,
+    "fields": {
+        "usuario": 11,
+        "cancion": 17,
+        "fecha_like": "2024-10-20T22:34:38.355"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 49,
+    "fields": {
+        "usuario": 12,
+        "cancion": 17,
+        "fecha_like": "2024-10-20T22:34:38.355"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 50,
+    "fields": {
+        "usuario": 18,
+        "cancion": 17,
+        "fecha_like": "2024-10-20T22:34:38.356"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 51,
+    "fields": {
+        "usuario": 3,
+        "cancion": 18,
+        "fecha_like": "2024-10-20T22:34:38.371"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 52,
+    "fields": {
+        "usuario": 19,
+        "cancion": 18,
+        "fecha_like": "2024-10-20T22:34:38.373"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 53,
+    "fields": {
+        "usuario": 14,
+        "cancion": 18,
+        "fecha_like": "2024-10-20T22:34:38.374"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 54,
+    "fields": {
+        "usuario": 8,
+        "cancion": 19,
+        "fecha_like": "2024-10-20T22:34:38.387"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 55,
+    "fields": {
+        "usuario": 2,
+        "cancion": 19,
+        "fecha_like": "2024-10-20T22:34:38.388"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 56,
+    "fields": {
+        "usuario": 13,
+        "cancion": 19,
+        "fecha_like": "2024-10-20T22:34:38.388"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 57,
+    "fields": {
+        "usuario": 14,
+        "cancion": 19,
+        "fecha_like": "2024-10-20T22:34:38.389"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 58,
+    "fields": {
+        "usuario": 17,
+        "cancion": 20,
+        "fecha_like": "2024-10-20T22:34:38.401"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 59,
+    "fields": {
+        "usuario": 8,
+        "cancion": 20,
+        "fecha_like": "2024-10-20T22:34:38.402"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 60,
+    "fields": {
+        "usuario": 6,
+        "cancion": 20,
+        "fecha_like": "2024-10-20T22:34:38.403"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 61,
+    "fields": {
+        "usuario": 19,
+        "cancion": 20,
+        "fecha_like": "2024-10-20T22:34:38.404"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 62,
+    "fields": {
+        "usuario": 3,
+        "cancion": 20,
+        "fecha_like": "2024-10-20T22:34:38.404"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 63,
+    "fields": {
+        "usuario": 1,
+        "cancion": 3,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 64,
+    "fields": {
+        "usuario": 19,
+        "cancion": 8,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 65,
+    "fields": {
+        "usuario": 18,
+        "cancion": 8,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 66,
+    "fields": {
+        "usuario": 3,
+        "cancion": 16,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 67,
+    "fields": {
+        "usuario": 7,
+        "cancion": 18,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 68,
+    "fields": {
+        "usuario": 6,
+        "cancion": 19,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 69,
+    "fields": {
+        "usuario": 11,
+        "cancion": 5,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 70,
+    "fields": {
+        "usuario": 18,
+        "cancion": 4,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 71,
+    "fields": {
+        "usuario": 4,
+        "cancion": 12,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 72,
+    "fields": {
+        "usuario": 19,
+        "cancion": 10,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 73,
+    "fields": {
+        "usuario": 18,
+        "cancion": 12,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 74,
+    "fields": {
+        "usuario": 16,
+        "cancion": 6,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 75,
+    "fields": {
+        "usuario": 7,
+        "cancion": 13,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 76,
+    "fields": {
+        "usuario": 6,
+        "cancion": 5,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 77,
+    "fields": {
+        "usuario": 6,
+        "cancion": 11,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 78,
+    "fields": {
+        "usuario": 16,
+        "cancion": 7,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 79,
+    "fields": {
+        "usuario": 3,
+        "cancion": 17,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 80,
+    "fields": {
+        "usuario": 4,
+        "cancion": 19,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 81,
+    "fields": {
+        "usuario": 6,
+        "cancion": 7,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.like",
+    "pk": 82,
+    "fields": {
+        "usuario": 17,
+        "cancion": 17,
+        "fecha_like": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 1,
+    "fields": {
+        "contenido": "Indeed certainly environmental at. Its account financial environmental yet large day toward.\nThing per pass nearly also. Recognize matter raise hour. Almost his water performance very between fill.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 11,
+        "usuario": 5
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 2,
+    "fields": {
+        "contenido": "Most positive value establish project since.\nSince no away amount himself air shake. Series fly individual fast defense.\nPlayer forward entire everybody health key.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 19,
+        "usuario": 8
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 3,
+    "fields": {
+        "contenido": "Other let book husband who. Score about analysis ahead west front century. West near charge marriage.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 18,
+        "usuario": 16
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 4,
+    "fields": {
+        "contenido": "Know government chance along evening recent answer. Government window must research project nor. Support poor foreign couple data still chance.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 15,
+        "usuario": 15
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 5,
+    "fields": {
+        "contenido": "Poor early understand school lay. Arrive tend establish relate rich.\nAs fire reveal father early. Would owner rather page.\nEstablish project option. Sea agree around office. Head foreign eat enjoy.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 17,
+        "usuario": 14
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 6,
+    "fields": {
+        "contenido": "Election my plant where woman happy summer data. Democratic necessary policy certainly.\nProtect member more live shake difficult than friend. Win after old upon treatment type.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 13,
+        "usuario": 6
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 7,
+    "fields": {
+        "contenido": "Today all choice soon common mouth type. Different wide rather card result war pass. Tonight and me firm force create.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 12,
+        "usuario": 5
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 8,
+    "fields": {
+        "contenido": "During economic above source south each. Spring treatment clearly cup white drug Congress. Buy position maintain industry.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 11,
+        "usuario": 10
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 9,
+    "fields": {
+        "contenido": "Firm shake bill major population possible particular. Computer process conference open.\nRecently crime owner. Create history around teach other example more. Relationship body also build defense.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 11,
+        "usuario": 12
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 10,
+    "fields": {
+        "contenido": "Stop front about. Simple tonight should sea.\nSeem record full why they worker. Campaign source design best guess test must.\nWalk account campaign executive. Reveal account seven soon.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 10,
+        "usuario": 11
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 11,
+    "fields": {
+        "contenido": "Edge wall scientist day term significant. Paper degree front step.\nRead wonder manager resource increase ago table case. Brother loss majority outside.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 4,
+        "usuario": 10
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 12,
+    "fields": {
+        "contenido": "Site idea anyone within within sit recognize. Magazine painting field particularly growth generation matter future. Avoid pretty both special.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 20,
+        "usuario": 12
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 13,
+    "fields": {
+        "contenido": "Interview recent director cup even treat exactly. Old listen stay change fall movie group. Pressure government green home bag.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 17,
+        "usuario": 8
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 14,
+    "fields": {
+        "contenido": "Bed cause effect evening. Parent long voice.\nPainting training type seek American accept. Finish likely upon issue season senior foot management. Congress stock so their result him agent.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 19,
+        "usuario": 4
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 15,
+    "fields": {
+        "contenido": "Month manager mention thus ahead old. Election fear dinner business avoid door. Down food fill dream be how.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 2,
+        "usuario": 7
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 16,
+    "fields": {
+        "contenido": "Kid accept Mrs be provide.\nHere institution here yard Mrs. Father yet item. Total wonder close able world a point team.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 9,
+        "usuario": 10
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 17,
+    "fields": {
+        "contenido": "Simply though sit skin. Computer middle economy end. Over too alone firm increase year.\nHelp best public order serious likely goal. Seek better sure hotel.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 10,
+        "usuario": 2
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 18,
+    "fields": {
+        "contenido": "Ever wish region tell during arm compare Mr. Radio fast bank fast space life whether service. Have bit factor however partner law.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 5,
+        "usuario": 18
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 19,
+    "fields": {
+        "contenido": "Less source lay available together message.\nMinute treat even thought give effort affect game. Social power scientist there least decision computer.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 10,
+        "usuario": 19
+    }
+},
+{
+    "model": "socialSound.comentario",
+    "pk": 20,
+    "fields": {
+        "contenido": "Floor challenge card image. Rest general quality yourself development environment run personal. Positive my hope improve something source. Range senior wife new.",
+        "fecha_publicacion": "2024-10-20T22:34:37.778",
+        "cancion": 14,
+        "usuario": 19
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 1,
+    "fields": {
+        "emisor": 6,
+        "receptor": 6,
+        "contenido": "Response me despite I while. Energy party think agreement exist most have. Risk performance box conference project.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": false
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 2,
+    "fields": {
+        "emisor": 18,
+        "receptor": 5,
+        "contenido": "Teach technology look return place top debate. Picture see shoulder determine. Building various newspaper least only common save writer.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": false
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 3,
+    "fields": {
+        "emisor": 1,
+        "receptor": 14,
+        "contenido": "Summer car movement admit edge. Relate daughter set woman wear such. Agreement wonder range war leader.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": true
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 4,
+    "fields": {
+        "emisor": 20,
+        "receptor": 2,
+        "contenido": "Son hour far class space large pay base. Rate power less.\nWhite feeling these recently analysis range head character.\nDeep really majority central reason space offer. Walk require argue inside try.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": true
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 5,
+    "fields": {
+        "emisor": 14,
+        "receptor": 15,
+        "contenido": "Writer some couple room difference write. Interview human newspaper. These eat season operation new close author.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": false
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 6,
+    "fields": {
+        "emisor": 9,
+        "receptor": 12,
+        "contenido": "Program improve federal run yourself. Account ever consider cultural blue move again.\nSet mind future. Feel soldier son bit note.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": false
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 7,
+    "fields": {
+        "emisor": 6,
+        "receptor": 11,
+        "contenido": "Some necessary foot use police put leader. Major whose may process friend coach.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": true
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 8,
+    "fields": {
+        "emisor": 4,
+        "receptor": 10,
+        "contenido": "Door official story water would five. Edge age read want local road.\nRecently under a drop medical watch. Medical effect style natural.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": true
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 9,
+    "fields": {
+        "emisor": 18,
+        "receptor": 12,
+        "contenido": "Actually bank defense although dream. Evening time better.\nGas leave someone election. Surface compare finally model city morning. Like eat hotel friend party.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": false
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 10,
+    "fields": {
+        "emisor": 14,
+        "receptor": 16,
+        "contenido": "Find thus movie contain. Many difference performance class. Bed money address yet run.\nReceive individual rock mind police. Age quality happy one white.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": false
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 11,
+    "fields": {
+        "emisor": 14,
+        "receptor": 18,
+        "contenido": "Act less old every seat that idea. Nor summer later economic pull special. Often region exactly choice meeting account floor cold.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": false
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 12,
+    "fields": {
+        "emisor": 13,
+        "receptor": 8,
+        "contenido": "Station red lawyer enjoy season involve professional. Test true create with call capital know. Government statement opportunity space beat surface expert.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": false
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 13,
+    "fields": {
+        "emisor": 3,
+        "receptor": 10,
+        "contenido": "Provide Democrat lose how. A rest apply experience.\nStyle through need weight across. Investment tree between skill leg claim. Stand ok organization interview per.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": true
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 14,
+    "fields": {
+        "emisor": 12,
+        "receptor": 3,
+        "contenido": "Wish statement wife operation safe effort final. Social idea oil team throw subject.\nOthers and market affect hundred effect success. Difficult white staff standard soon design.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": false
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 15,
+    "fields": {
+        "emisor": 20,
+        "receptor": 12,
+        "contenido": "Personal reach skill stand. Change treat case only. Fine turn policy prevent.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": true
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 16,
+    "fields": {
+        "emisor": 17,
+        "receptor": 5,
+        "contenido": "Writer financial support respond. At economy agree sister away middle project.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": false
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 17,
+    "fields": {
+        "emisor": 16,
+        "receptor": 19,
+        "contenido": "Control nearly process recent growth evidence drop. Assume miss front rock.\nOut know push best sister wife. Plan people group hard watch tend.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": true
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 18,
+    "fields": {
+        "emisor": 4,
+        "receptor": 10,
+        "contenido": "Energy create team citizen by service medical happen. Mission third role goal window avoid appear account.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": true
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 19,
+    "fields": {
+        "emisor": 6,
+        "receptor": 9,
+        "contenido": "Admit fire road travel sit treatment your indeed. Talk you data senior. Another really expert star cover stock world. Affect face exactly authority time argue.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": true
+    }
+},
+{
+    "model": "socialSound.mensajeprivado",
+    "pk": 20,
+    "fields": {
+        "emisor": 3,
+        "receptor": 14,
+        "contenido": "Billion door race continue. Let huge always should. Beautiful education create.\nServe she number edge bed. Difference young trial need notice. Up alone scientist.",
+        "fecha_envio": "2024-10-20T22:34:37.778",
+        "leido": true
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 1,
+    "fields": {
+        "usuario": 12,
+        "cancion": 7,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 2,
+    "fields": {
+        "usuario": 13,
+        "cancion": 18,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 3,
+    "fields": {
+        "usuario": 6,
+        "cancion": 11,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 4,
+    "fields": {
+        "usuario": 2,
+        "cancion": 1,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 5,
+    "fields": {
+        "usuario": 7,
+        "cancion": 18,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 6,
+    "fields": {
+        "usuario": 15,
+        "cancion": 13,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 7,
+    "fields": {
+        "usuario": 13,
+        "cancion": 1,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 8,
+    "fields": {
+        "usuario": 1,
+        "cancion": 5,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 9,
+    "fields": {
+        "usuario": 20,
+        "cancion": 1,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 10,
+    "fields": {
+        "usuario": 4,
+        "cancion": 9,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 11,
+    "fields": {
+        "usuario": 19,
+        "cancion": 11,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 12,
+    "fields": {
+        "usuario": 8,
+        "cancion": 16,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 13,
+    "fields": {
+        "usuario": 17,
+        "cancion": 13,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 14,
+    "fields": {
+        "usuario": 10,
+        "cancion": 14,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 15,
+    "fields": {
+        "usuario": 20,
+        "cancion": 9,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 16,
+    "fields": {
+        "usuario": 8,
+        "cancion": 19,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 17,
+    "fields": {
+        "usuario": 12,
+        "cancion": 18,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 18,
+    "fields": {
+        "usuario": 14,
+        "cancion": 11,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 19,
+    "fields": {
+        "usuario": 1,
+        "cancion": 14,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+},
+{
+    "model": "socialSound.guardado",
+    "pk": 20,
+    "fields": {
+        "usuario": 11,
+        "cancion": 16,
+        "fecha_guardado": "2024-10-20T22:34:37.779"
+    }
+}
+]

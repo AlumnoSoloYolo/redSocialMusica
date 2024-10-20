@@ -31,4 +31,5 @@ $RECYCLE.BIN/
 *.code-workspace
 
 # fixtures
-biblioteca/fixtures/datos.json
+# socialSound/fixtures/datos.json
+# los subo para que puedas comprobar que creé un backup

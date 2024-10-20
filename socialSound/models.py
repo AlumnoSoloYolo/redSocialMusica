@@ -3,35 +3,57 @@ from django.utils import timezone
 from django.contrib.auth.hashers import make_password, check_password
 
 
-# Modelo Usuario 
 class Usuario(models.Model):
     nombre_usuario = models.CharField(max_length=100, unique=True)
     password = models.CharField(max_length=100)  
     bio = models.TextField(blank=True)
     ciudad = models.CharField(max_length=150, blank=True)
-    foto_perfil = models.ImageField(upload_to='fotos_perfil/', blank=True)
+    foto_perfil = models.ImageField(upload_to='fotos_perfil/', blank=True) #subir archivos de imágenes
     fecha_nac = models.DateField()
-
-        # Métodos para gestionar seguidores directamente desde el modelo intermedio
-    def obtener_seguidores(self):
-        return Seguidores.objects.filter(seguido=self)
-
-    def obtener_seguidos(self):
-        return Seguidores.objects.filter(seguidor=self)
 
     def __str__(self):
         return self.nombre_usuario
-    
-    
-    # hasheo. Seguridad en password
+
+    # Métodos para gestionar seguidores
+    def seguir(self, otro_usuario):
+        # Permite que este usuario siga a otro usuario
+        if otro_usuario != self:  # No se puede seguir a uno mismo
+            Seguidores.objects.get_or_create(seguidor=self, seguido=otro_usuario)
+
+    def dejar_de_seguir(self, otro_usuario):
+        # Permite que este usuario deje de seguir a otro usuario
+        Seguidores.objects.filter(seguidor=self, seguido=otro_usuario).delete()
+
+    def obtener_seguidores(self):
+        # Devuelve una lista de usuarios que siguen a este usuario
+        return Usuario.objects.filter(seguidores__seguido=self)
+
+    def obtener_seguidos(self):
+        #Devuelve una lista de usuarios a los que este usuario sigue
+        return Usuario.objects.filter(siguientes__seguidor=self)
+
     def set_password(self, raw_password):
+        # Encripta la contraseña ingresada por el usuario (raw_password) y la guarda de forma segura en la base de datos.
         self.password = make_password(raw_password)
 
+        # Se utiliza al autenticar al usuario, verificando si la contraseña proporcionada es correcta
     def check_password(self, raw_password):
         return check_password(raw_password, self.password)
-    
 
-# modelo album
+
+class Seguidores(models.Model):
+    seguidor = models.ForeignKey(Usuario, related_name="seguidores", on_delete=models.CASCADE)
+    seguido = models.ForeignKey(Usuario, related_name="siguiendo", on_delete=models.CASCADE)
+    fecha_inicio = models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        unique_together = ('seguidor', 'seguido')  # Evita duplicados
+
+    def __str__(self):
+        return f'{self.seguidor.nombre_usuario} sigue a {self.seguido.nombre_usuario}'
+
+
+# Modelo Album
 class Album(models.Model):
     titulo = models.CharField(max_length=200)
     artista = models.CharField(max_length=200)
@@ -39,9 +61,30 @@ class Album(models.Model):
     fecha_lanzamiento = models.DateField()
     portada = models.ImageField(upload_to='album_portadas/', blank=True)
     descripcion = models.TextField(blank=True)
+    reposts = models.ManyToManyField(Usuario, related_name='reposts_albumes', blank=True)
 
     def __str__(self):
         return self.titulo
+
+
+# Modelo Detalle del Álbum (OneToOne)
+class DetalleAlbum(models.Model):
+    album = models.OneToOneField(Album, on_delete=models.CASCADE)
+    productor = models.CharField(max_length=200)
+    estudio_grabacion = models.CharField(max_length=200, blank=True)
+    numero_pistas = models.PositiveIntegerField()
+    sello_discografico = models.CharField(max_length=100, blank=True)
+
+
+# Modelo de Estadísticas del Álbum (OneToOne)
+class EstadisticasAlbum(models.Model):
+    album = models.OneToOneField(Album, on_delete=models.CASCADE)
+    reproducciones = models.PositiveIntegerField(default=0)
+    likes = models.PositiveIntegerField(default=0)
+    comentarios = models.PositiveIntegerField(default=0)
+
+    def __str__(self):
+        return f'Estadísticas del álbum {self.album.titulo}'
 
 
 # Modelo de Canciones
@@ -117,23 +160,72 @@ class Cancion(models.Model):
         ('dancehall', 'Dancehall'),
         ('dub', 'Dub'),
     ]
-    etiqueta = models.CharField(
-        max_length=50, 
-        blank=False, 
-        choices=CATEGORIAS_CHOICES
-    )
+    etiqueta = models.CharField(max_length=50, choices=CATEGORIAS_CHOICES)
     titulo = models.CharField(max_length=200)
     artista = models.CharField(max_length=100)
-    duracion = models.DurationField()
-    archivo_audio = models.FileField(upload_to='canciones/')
+    archivo_audio = models.FileField(upload_to='canciones/') #subir archivos .wav
     portada = models.ImageField(upload_to='cancion_portadas/', blank=True)
     fecha_subida = models.DateTimeField(default=timezone.now)
     usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
     album = models.ForeignKey(Album, on_delete=models.CASCADE, related_name='canciones', null=True, blank=True)
+    likes = models.ManyToManyField(Usuario, through='Like', related_name='like_list', blank=True)
+    reposts = models.ManyToManyField(Usuario, related_name='reposts_canciones', blank=True)
 
     def __str__(self):
         return self.titulo
 
+
+# Modelo Detalle de Cancion (OneToOne)
+class DetalleCancion(models.Model):
+    cancion = models.OneToOneField(Cancion, on_delete=models.CASCADE, related_name='detalles')
+    letra = models.TextField(blank=True)
+    creditos = models.TextField(blank=True)
+    duracion = models.DurationField()
+    idioma = models.CharField(max_length=50, blank=True)
+
+    def __str__(self):
+        return f'Detalles de {self.cancion.titulo}'
+
+
+# Modelo de Playlist con relación ManyToMany a Cancion
+class Playlist(models.Model):
+    nombre = models.CharField(max_length=100)
+    descripcion = models.TextField(max_length=255)
+    fecha_creacion = models.DateTimeField(default=timezone.now)
+    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
+    canciones = models.ManyToManyField(Cancion, through='CancionPlaylist', related_name='cannciones')
+    publica = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.nombre
+
+
+# Tabla intermedia para Playlist y Cancion (ManyToMany con atributos extra)
+class CancionPlaylist(models.Model):
+    cancion = models.ForeignKey(Cancion, on_delete=models.CASCADE)
+    playlist = models.ForeignKey(Playlist, on_delete=models.CASCADE)
+    orden = models.PositiveIntegerField(default=0)
+    fecha_agregada = models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        unique_together = ('cancion', 'playlist')
+
+    def __str__(self):
+        return f'{self.cancion.titulo} en {self.playlist.nombre}'
+
+
+
+# Modelo de Likes (ManyToMany con atributo extra de fecha)
+class Like(models.Model):
+    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
+    cancion = models.ForeignKey(Cancion, on_delete=models.CASCADE)
+    fecha_like = models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        unique_together = ('usuario', 'cancion')
+
+    def __str__(self):
+        return f'{self.usuario.nombre_usuario} le gustó {self.cancion.titulo}'
 
 
 # Modelo de Comentarios
@@ -145,33 +237,6 @@ class Comentario(models.Model):
 
     def __str__(self):
         return f'{self.usuario.nombre_usuario} comentó en {self.cancion.titulo}'
-
-
-
-# Modelo de Playlist
-class Playlist(models.Model):
-    nombre = models.CharField(max_length=100, blank=False)
-    descripcion = models.TextField(max_length=255)
-    fecha_creacion = models.DateTimeField(default=timezone.now)
-    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
-    canciones = models.ManyToManyField(Cancion, through='CancionPlaylist', related_name='playlists')
-    publica = models.BooleanField(default=True)
-
-    def __str__(self):
-        return self.nombre
-
-
-
-# Modelo de Likes
-class Like(models.Model):
-    cancion = models.ForeignKey(Cancion, on_delete=models.CASCADE)
-    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
-    fecha_like = models.DateTimeField(default=timezone.now)
-    activo = models.BooleanField(default=True)
-
-    def __str__(self):
-        return f'{self.usuario.nombre_usuario} le gustó {self.cancion.titulo}'
-
 
 
 # Modelo de Mensajes Privados
@@ -186,42 +251,14 @@ class MensajePrivado(models.Model):
         return f'Mensaje de {self.emisor.nombre_usuario} a {self.receptor.nombre_usuario}'
 
 
-
-# Modelo de Seguidores
-class Seguidores(models.Model):
-    seguidor = models.ForeignKey(Usuario, on_delete=models.CASCADE, related_name="seguidores_list")
-    seguido = models.ForeignKey(Usuario, on_delete=models.CASCADE, related_name='siguiendo_list')
-    fecha_inicio = models.DateTimeField(default=timezone.now)
-
-    class Meta:
-        unique_together = ('seguidor', 'seguido')
-
-    def __str__(self):
-        return f'{self.seguidor.nombre_usuario} sigue a {self.seguido.nombre_usuario}'  
-
-
-# del modelo entidad relacion, la relación playlist contiene cancion crea una tabla intermedia:
-class CancionPlaylist(models.Model):
-    cancion = models.ForeignKey(Cancion, on_delete=models.CASCADE)
-    playlist = models.ForeignKey(Playlist, on_delete=models.CASCADE)
-    orden = models.PositiveIntegerField(default=0)
-    fecha_agregada = models.DateTimeField(default=timezone.now)
-
-    class Meta:
-        unique_together = ('cancion', 'playlist')  # Evita duplicación de canciones en la misma playlist
-
-    def __str__(self):
-        return f'{self.cancion.titulo} en {self.playlist.nombre}'
-    
-
-# Modelo de canciones guardadas
+# Modelo de canciones guardadas (ManyToMany entre Usuario y Cancion)
 class Guardado(models.Model):
     usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
     cancion = models.ForeignKey(Cancion, on_delete=models.CASCADE)
     fecha_guardado = models.DateTimeField(default=timezone.now)
-    
+
     class Meta:
-        unique_together = ('usuario', 'cancion')  # Evita que un usuario guarde la misma canción más de una vez
+        unique_together = ('usuario', 'cancion')
 
     def __str__(self):
         return f'{self.usuario.nombre_usuario} guardó {self.cancion.titulo}'
