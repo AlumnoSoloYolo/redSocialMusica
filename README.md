@@ -201,3 +201,165 @@ Relación N a 1 con Usuario: Cada canción guardada está asociada a un usuario 
 Relación N a 1 con Cancion: Cada canción guardada está asociada a una canción específica.
 Relación única (usuario, cancion): Un usuario no puede guardar la misma canción más de una vez.
 
+
+______________________________________________________________________________________________________________
+
+PARTE 2: aclaraciones y especificaciones de URLs y Vistas
+
+## ACLARACIONES ARCHIVOS MULTIMEDIA:
+
+NO SE SIRVEN EN MODO PRODUCCIÓN. Si quieres verlo poner DEBUG = True
+
+
+
+
+## Estructura de URLs
+
+A continuación, se detallan las URLs disponibles en la aplicación, junto con las vistas correspondientes y sus funcionalidades.
+
+### 1. Página de inicio
+
+- URL: `/`
+- Vista: `index`
+- Descripción: Página principal con enlaces a todas las otras vistas de la aplicación.
+- Requisito cumplido:
+      -  index donde aaceder a todas las urls
+
+### 2. Perfil del usuario
+
+- URL: `/perfil_usuario/<nombre_usuario>/`
+- Vista: `perfil_usuario`
+- Descripción: Muestra el perfil del usuario especificado, incluyendo seguidos, seguidores y álbumes creados.
+- Requisitos cumplidos:
+  - Uso de QuerySet, optimización y comentarios explicando funcionamiento de las vistas.
+  - Relaciones ManyToMany (seguidores y seguidos).
+  - Parámetros str
+  - Uso de re_path en la url
+  
+### 3. Feed del usuario
+
+- URL: `/usuario/<nombre_usuario>/feed/`
+- Vista: `feed`
+- Descripción: Muestra los álbumes subidos por los usuarios que el usuario especificado sigue.
+- Requisitos cumplidos:
+  - Uso de QuerySet, optimización y comentarios explicando funcionamiento de las vistas.
+  - Aggregates para calcular el total de likes en los álbumes.
+  - Uso de limit
+  - Parámetros str
+  - Uso de order_by
+
+### 4. Lista de álbumes
+
+- URL: `/lista_albumes/<nombre_usuario>/`
+- Vista: `lista_albumes`
+- Descripción: Muestra una lista de todos los álbumes creados por el usuario especificado.
+- Requisitos cumplidos:
+  - Uso de QuerySet, optimización y comentarios explicando funcionamiento de las vistas.
+  - Relaciones OneToMany (álbumes del usuario).
+  - Parámetros str
+  - order_by
+
+### 5. Detalles de un álbum
+
+- URL: `/album/<int:album_id>/detalles_album/`
+- Vista: `detalle_album`
+- Descripción: Muestra los detalles de un álbum específico, incluyendo estadísticas.
+- Requisitos cumplidos:
+  - Uso de QuerySet, optimización y comentarios explicando funcionamiento de las vistas.
+  - Relaciones OneToOne (detalles y estadísticas del álbum).
+  - Parámetros enteros
+
+### 6. Listar canciones de un álbum
+
+- URL: `/album/<int:album_id>/canciones/`
+- Vista: `canciones_album`
+- Descripción: Muestra todas las canciones que pertenecen a un álbum específico.
+- Requisitos cumplidos:
+  - Uso de QuerySet, optimización y comentarios explicando funcionamiento de las vistas.
+  - Parámetros enteros
+
+### 7. Comentarios de un álbum
+
+- URL: `/album/<int:album_id>/comentarios/`
+- Vista: `comentarios_album`
+- Descripción: Muestra todos los comentarios realizados en un álbum específico.
+- Requisitos cumplidos:
+  - Uso de QuerySet, optimización y comentarios explicando funcionamiento de las vistas.
+  - Relaciones OneToMany (comentarios del álbum).
+  - Parámetros enteros
+  - uso order_by
+
+### 8. Detalles de una canción
+
+- URL: `/cancion/<int:cancion_id>/detalles_cancion/`
+- Vista: `detalle_cancion`
+- Descripción: Muestra los detalles de una canción específica.
+- Requisitos cumplidos:
+  - Uso de QuerySet, optimización y comentarios explicando funcionamiento de las vistas.
+  - Parámetros enteros
+
+### 9. Lista de playlists de un usuario
+
+- URL: `/usuario/<nombre_usuario>/playlists/`
+- Vista: `lista_playlist`
+- Descripción: Muestra todas las playlists creadas por el usuario especificado.
+- Requisitos cumplidos:
+  - Uso de QuerySet, optimización y comentarios explicando funcionamiento de las vistas.
+  - Parámetros str
+
+### 10. Contenido de una playlist
+
+- URL: `/playlist/<int:playlist_id>/canciones/`
+- Vista: `canciones_playlist`
+- Descripción: Muestra todas las canciones que pertenecen a una playlist específica.
+- Requisitos cumplidos:
+  - Uso de QuerySet, optimización y comentarios explicando funcionamiento de las vistas.
+  - Parámetros enteros
+
+### 11. Canciones guardadas por el usuario
+
+- URL: `/canciones_guardadas/<nombre_usuario>/`
+- Vista: `canciones_guardadas`
+- Descripción: Muestra una lista de todas las canciones que el usuario ha guardado.
+- Requisitos cumplidos:
+  - Uso de QuerySet, optimización y comentarios explicando funcionamiento de las vistas.
+  - Parámetros str
+
+### 12. Mensajes privados entre dos usuarios
+
+- URL: `/mensajes_privados/<int:emisor_id>/<int:receptor_id>/`
+- Vista: `mensajes_privados`
+- Descripción: Muestra la interfaz de mensajes privados entre dos usuarios.
+- Requisitos cumplidos:
+  - Uso de QuerySet, optimización y comentarios explicando funcionamiento de las vistas.
+  - Parámetros enteros
+  - filtros con OR y AND
+  - Uso order_by
+
+
+### 13. URL: Usuarios que un usuario específico no sigue
+- Vista: `lista_no_sigue`
+- Descripción: Muestra una lista de usuarios que el usuario actual no sigue.
+- Requisitos cumplidos:
+  - Uso de QuerySet, optimización y comentarios explicando funcionamiento de las vistas.
+  - Parámetros str
+  - Filtro con `None`: Se aplica un filtro que utiliza `None` en la tabla intermedia para determinar la relación de seguimiento.
+
+## Requisitos cumplidos
+
+1. 10 URLs con vistas correspondientes.
+2. Uso de funciones vistas en clase y QuerySet para obtener datos entre tablas.
+3. Comentarios en cada vista explicando su funcionalidad.
+4. Manejo de relaciones ManyToMany, OneToOne y OneToMany.
+5. Página de error personalizada para los cuatro tipos de errores.
+6. Optimización de queries.
+7. Uso de `re_path`, parámetros enteros y `str`.
+8. Filtros con AND y OR, aggregate, relación reversa, `order_by`, limit y filtro con `None`.
+9. Existencia de un índice desde donde se puede acceder a todas las URLs.
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Canciones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #666;
+            margin-top: 20px;
+        }
+
+        img {
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+
+        .song-list>li {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="{% url 'index' %}">volver al inicio</a>
+
+    <h1>Canciones de {{ album.titulo }}</h1>
+    <img src="{{ album.portada.url }}" alt="Portada de {{ cancion.titulo }}"
+        style="max-width: 200px; max-height: 200px;">
+
+    <ul class="song-list">
+        {% for cancion in album.canciones.all %}
+        <li>
+            <p>{{ cancion.titulo }}</p>
+            <audio controls>
+                <source src="{{ cancion.archivo_audio.url }}" type="audio/wav">
+            </audio>
+            <ul>
+                <li>
+                    <a href="{% url 'detalle_cancion' cancion.id %}">Ver detalles</a>
+                </li>
+                <li>
+                    <a href="{% url 'comentarios_album' album.id %}">Comentarios</a>
+                </li>
+            </ul>
+
+
+        </li>
+        {% empty %}
+        <li>No hay canciones disponibles en este álbum.</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'perfil_usuario' album.usuario.nombre_usuario %}">Volver al perfil</a>
+</body>
+
+</html>

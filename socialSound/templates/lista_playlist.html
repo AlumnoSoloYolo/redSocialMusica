@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas de Reproducción</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #ffffff;
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        p {
+            margin: 5px 0;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="{% url 'index' %}">volver al inicio</a><br>
+    <a href="{% url 'perfil_usuario' usuario.nombre_usuario %}">volver al perfil de: {{ usuario.nombre_usuario }}</a>
+
+    <h1>Listas de Reproducción</h1>
+    <ul>
+        {% for playlist in playlists %}
+        <li>
+            <p>{{ playlist.nombre }}</p>
+            <a href="{% url 'canciones_playlist' playlist.id %}">ver canciones</a>
+        </li>
+        {% empty %}
+        <li>No hay listas de reproducción disponibles.</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>

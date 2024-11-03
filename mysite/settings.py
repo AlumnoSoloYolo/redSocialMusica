@@ -10,10 +10,18 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -25,7 +33,9 @@ SECRET_KEY = 'django-insecure-dba-9kl)yc2(a66s8i_cb0(wt7#ol1ai%p@o8ot(zn7+=r2^5_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
+INTERNAL_IPS = ['127.0.0.1',]
 
 
 # Application definition
@@ -39,6 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_seed',
     'socialSound',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +60,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -111,7 +123,7 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_TZ = False
+USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
@@ -119,7 +131,14 @@ USE_TZ = False
 
 STATIC_URL = 'static/'
 
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+
+

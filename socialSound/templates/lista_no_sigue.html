@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios que no sigues</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #ffffff;
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        img {
+            border-radius: 8px;
+            margin-bottom: 10px;
+            max-width: 200px;
+            max-height: 200px;
+            border: 1px solid #333;
+        }
+
+        h3 {
+            color: #333;
+            margin: 10px 0;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Usuarios que no sigues</h1>
+    <a href="{% url 'index' %}">Volver al inicio</a><br>
+
+
+    <ul>
+        {% for usuario in usuarios_no_seguidos %}
+        <li style="width: 300px;">
+            <img src="{{ usuario.foto_perfil.url }}" alt="Foto de perfil de {{ usuario.nombre_usuario }}"
+                style="width: 80px; height: 80px; border-radius: 50%;">
+            <h2><strong>{{ usuario.nombre_usuario }}</strong></h2>
+        </li>
+        {% empty %}
+        <li>No hay usuarios que no sigas.</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>

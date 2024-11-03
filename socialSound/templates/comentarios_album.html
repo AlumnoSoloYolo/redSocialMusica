@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios en {{ album.titulo }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #666;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        .comment-user {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .comment-user img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .comment-content {
+            margin-left: 10px;
+        }
+
+        .profile-info {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="{% url 'index' %}">Volver al inicio</a>
+    <h1>Comentarios en: {{ album.titulo }}</h1>
+    <a href="{% url 'perfil_usuario' album.usuario.nombre_usuario %}">
+        <p>Publicado por: {{ album.usuario.nombre_usuario }}</p>
+    </a>
+
+    <p>Descripción: {{ album.descripcion }}</p>
+    <p>Fecha de subida: {{ album.fecha_subida|date:"d/m/Y" }}</p>
+
+    <h2>Comentarios:</h2>
+    <ul>
+        {% if comentarios %}
+        {% for comentario in comentarios %}
+        <li>
+            <div class="comment-user">
+                <img src="{{ comentario.usuario.foto_perfil.url }}"
+                    alt="Foto de perfil de {{ comentario.usuario.nombre_usuario }}">
+                <div class="comment-content">
+                    <a href="{% url 'perfil_usuario' comentario.usuario.nombre_usuario %}">
+                        <strong>{{ comentario.usuario.nombre_usuario }}</strong>
+                    </a>
+                    <p>Ciudad: {{ comentario.usuario.ciudad }}</p>
+                    <p><em>{{ comentario.fecha_publicacion|date:"d/m/Y H:i" }}</em></p>
+                    <p>{{ comentario.contenido }}</p>
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+        {% else %}
+        <li>No hay comentarios para este álbum.</li>
+        {% endif %}
+    </ul>
+</body>
+
+</html>

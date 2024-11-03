@@ -11,6 +11,10 @@ admin.site.register(Playlist)
 admin.site.register(Like)
 admin.site.register(Guardado)
 admin.site.register(MensajePrivado)
+admin.site.register(DetallesCancion)
+admin.site.register(DetalleAlbum)
+admin.site.register(EstadisticasAlbum)
+admin.site.register(CancionPlaylist)
 
 
 

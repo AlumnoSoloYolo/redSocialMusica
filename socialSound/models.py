@@ -10,6 +10,7 @@ class Usuario(models.Model):
     ciudad = models.CharField(max_length=150, blank=True)
     foto_perfil = models.ImageField(upload_to='fotos_perfil/', blank=True) #subir archivos de imágenes
     fecha_nac = models.DateField()
+    email = models.CharField(max_length=100, unique=True, null=True)
 
     def __str__(self):
         return self.nombre_usuario
@@ -26,11 +27,11 @@ class Usuario(models.Model):
 
     def obtener_seguidores(self):
         # Devuelve una lista de usuarios que siguen a este usuario
-        return Usuario.objects.filter(seguidores__seguido=self)
+        return Usuario.objects.filter(seguidores__seguido=self)  # Cambiado a 'seguido=self'
 
     def obtener_seguidos(self):
-        #Devuelve una lista de usuarios a los que este usuario sigue
-        return Usuario.objects.filter(siguientes__seguidor=self)
+        # Devuelve una lista de usuarios a los que este usuario sigue
+        return Usuario.objects.filter(siguiendo__seguidor=self)
 
     def set_password(self, raw_password):
         # Encripta la contraseña ingresada por el usuario (raw_password) y la guarda de forma segura en la base de datos.
@@ -58,7 +59,7 @@ class Album(models.Model):
     titulo = models.CharField(max_length=200)
     artista = models.CharField(max_length=200)
     usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
-    fecha_lanzamiento = models.DateField()
+    fecha_subida = models.DateField(default=timezone.now)
     portada = models.ImageField(upload_to='album_portadas/', blank=True)
     descripcion = models.TextField(blank=True)
     reposts = models.ManyToManyField(Usuario, related_name='reposts_albumes', blank=True)
@@ -69,7 +70,7 @@ class Album(models.Model):
 
 # Modelo Detalle del Álbum (OneToOne)
 class DetalleAlbum(models.Model):
-    album = models.OneToOneField(Album, on_delete=models.CASCADE)
+    album = models.OneToOneField(Album, on_delete=models.CASCADE, related_name='album')
     productor = models.CharField(max_length=200)
     estudio_grabacion = models.CharField(max_length=200, blank=True)
     numero_pistas = models.PositiveIntegerField()
@@ -176,7 +177,7 @@ class Cancion(models.Model):
 
 
 # Modelo Detalle de Cancion (OneToOne)
-class DetalleCancion(models.Model):
+class DetallesCancion(models.Model):
     cancion = models.OneToOneField(Cancion, on_delete=models.CASCADE, related_name='detalles')
     letra = models.TextField(blank=True)
     creditos = models.TextField(blank=True)
@@ -232,11 +233,11 @@ class Like(models.Model):
 class Comentario(models.Model):
     contenido = models.TextField()
     fecha_publicacion = models.DateTimeField(default=timezone.now)
-    cancion = models.ForeignKey(Cancion, on_delete=models.CASCADE)
+    album = models.ForeignKey(Album, on_delete=models.CASCADE, null=True)
     usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f'{self.usuario.nombre_usuario} comentó en {self.cancion.titulo}'
+        return f'{self.usuario.nombre_usuario} comentó en {self.album.titulo}'
 
 
 # Modelo de Mensajes Privados

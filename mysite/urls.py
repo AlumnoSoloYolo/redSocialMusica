@@ -15,8 +15,22 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
+from django.conf.urls import handler400,handler404,handler403,handler500
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include("socialSound.urls")),
+    path('__debug__/', include('debug_toolbar.urls')),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+handler404 = "socialSound.views.mi_error_400"
+handler503 = "socialSound.views.mi_error_403"
+handler503 = "socialSound.views.mi_error_404"
+handler500 = "socialSound.views.mi_error_500"

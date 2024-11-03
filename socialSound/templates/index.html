@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #ffffff;
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bienvenido</h1>
+    <ul>
+
+        <li><a href="{% url 'perfil_usuario' 'usuario1' %}">Perfil de Usuario (Ejemplo: usuario1)</a></li>
+        <li><a href="{% url 'feed' 'usuario1' %}">Feed de Usuario (Ejemplo: usuario1)</a></li>
+        <li><a href="{% url 'lista_albumes' 'usuario1' %}">Lista de Álbumes (Ejemplo: usuario1)</a></li>
+        <li><a href="{% url 'detalle_album' 1 %}">Detalles de Álbum (Ejemplo: ID 1)</a></li>
+        <li><a href="{% url 'canciones_album' 1 %}">Canciones de Álbum (Ejemplo: ID 1)</a></li>
+        <li><a href="{% url 'comentarios_album' 1 %}">Comentarios de Álbum (Ejemplo: ID 1)</a></li>
+        <li><a href="{% url 'detalle_cancion' 1 %}">Detalles de Canción (Ejemplo: ID 1)</a></li>
+        <li><a href="{% url 'lista_playlist' 'usuario1' %}">Lista de Playlists (Ejemplo: usuario1)</a></li>
+        <li><a href="{% url 'canciones_playlist' 1 %}">Canciones de Playlist (Ejemplo: ID 1)</a></li>
+        <li><a href="{% url 'canciones_guardadas' 'usuario1' %}">Canciones Guardadas (Ejemplo: usuario1)</a></li>
+        <li><a href="{% url 'mensajes_privados' 1 2 %}">Mensajes Privados (Ejemplo: Emisor 1, Receptor 2)</a></li>
+        <li><a href="{% url 'lista_no_sigue' 'usuario1' %}">Usuarios que no sigues (ejemplo con usuario1)</a></li>
+    </ul>
+
+</body>
+
+</html>

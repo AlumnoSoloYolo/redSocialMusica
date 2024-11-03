@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canciones Guardadas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #666;
+            margin-top: 20px;
+        }
+
+        img {
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .profile-info {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    {% load static %}
+    <a href="{% url 'index' %}">Volver al inicio</a>
+    <h2>Canciones Guardadas</h2>
+    <ul>
+        {% for cancion_guardada in lista_canciones %}
+        <li>
+            {% if cancion_guardada.cancion.portada %}
+            <img src="{{ cancion_guardada.cancion.portada.url }}" alt="Portada de {{ cancion_guardada.cancion.titulo }}"
+                style="max-width: 200px; max-height: 200px;">
+            {% else %}
+            <img src="{% static 'cancion_portadas/image.png' %}" alt="Portada por defecto"
+                style="max-width: 200px; max-height: 200px;">
+            {% endif %}
+            <h3>{{ cancion_guardada.cancion.titulo }}</h3>
+            <p>De: {{ cancion_guardada.cancion.artista }}</p>
+            <p>Subido por: {{ cancion_guardada.cancion.usuario.nombre_usuario }}</p>
+            <p>Fecha de subida: {{ cancion_guardada.cancion.fecha_subida }}</p>
+            <audio controls>
+                <source src="{{ cancion_guardada.cancion.archivo_audio.url }}" type="audio/wav">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
