@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+{% extends 'principal.html' %}
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de {{ usuario.nombre_usuario }}</title>
+
+    {% block extra_css %}
+
+    <link rel="stylesheet" href="{% static 'css/perfil-usuario.css' %}">
+    {% endblock %}
+
+</head>
+
+
+{% load static %}
+
+<body>
+
+    {% block contenido %}
+    <div class="perfil-usuario-container">
+        <a href="{% url 'index' %}" class="volver-inicio">Volver al inicio</a>
+
+        <div class="perfil-usuario">
+            <h1>Perfil de {{ usuario.nombre_usuario }}</h1>
+            <div class="perfil-imagen">
+                {% if usuario.foto_perfil %}
+                <img src="{{ usuario.foto_perfil.url }}" alt="Foto de perfil de {{ usuario.nombre_usuario }}"
+                    class="foto-perfil">
+                {% else %}
+                <img src="{% static 'default_profile_image.jpg' %}" alt="Foto de perfil por defecto"
+                    class="foto-perfil">
+                {% endif %}
+            </div>
+
+            <div class="biografia">
+                <h2>Biografía</h2>
+                <p>{{ usuario.bio }}</p>
+            </div>
+
+            <div class="ciudad">
+                <h2>Ciudad</h2>
+                <p>{{ usuario.ciudad }}</p>
+            </div>
+
+            <div class="links">
+                <h2>Playlists:</h2>
+                <a href="{% url 'lista_playlist' usuario.nombre_usuario %}" class="btn">Ver playlists</a>
+            </div>
+
+            <div class="links">
+                <h2>Canciones guardadas:</h2>
+                <a href="{% url 'canciones_guardadas' usuario.nombre_usuario %}" class="btn">Canciones Guardadas</a>
+            </div>
+        </div>
+
+        <div class="albums">
+            <h2>Álbumes subidos</h2>
+            <p>Álbumes subidos: {{ total_albumes }}</p>
+            <ul>
+                {% for album in albumes %}
+                {% include 'usuario/album_usuario.html' %}
+                {% empty %}
+                <li>No hay álbumes subidos por este usuario.</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="seguidores">
+            <h2>Seguidores</h2>
+            <p>{{ total_seguidores }}</p>
+            <ul>
+                {% for seguidor in seguidores %}
+                {% include 'usuario/seguidor.html' %}
+                {% empty %}
+                <li>No tienes seguidores aún.</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="seguidos">
+            <h2>Seguidos</h2>
+            <p>{{ total_seguidos }}</p>
+            <ul>
+                {% for seguido in seguidos %}
+                {% include 'usuario/seguido.html' %}
+                {% empty %}
+                <li>No sigues a nadie aún.</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% endblock %}
+
+</body>
+
+</html>

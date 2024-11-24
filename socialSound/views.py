@@ -25,7 +25,7 @@ def perfil_usuario(request, nombre_usuario):
     total_albumes = albumes.count()  # Contar el total de álbumes
 
     # Renderizamos la plantilla con los datos del perfil y estadísticas
-    return render(request, 'perfil_usuario.html', 
+    return render(request, 'usuario/perfil_usuario.html', 
                   {
                       'usuario': usuario,
                       'seguidos': seguidos,
@@ -50,7 +50,7 @@ def feed(request, nombre_usuario):
     total_likes = albumes_feed.aggregate(total_likes=Sum('estadisticasalbum__likes'))['total_likes'] or 0
 
     # Renderizammos el feed con los álbumes y el total de likes
-    return render(request, 'feed.html', {
+    return render(request, 'usuario/feed.html', {
         'albumes_feed': albumes_feed,
         'usuario_actual': usuario_actual,
         'total_likes': total_likes,
@@ -64,7 +64,7 @@ def lista_albumes(request, nombre_usuario):
     albumes = Album.objects.filter(usuario=usuario).order_by('fecha_subida').select_related('usuario', 'album').prefetch_related('canciones')
 
     # Renderizamos la lista de álbumes del usuario
-    return render(request, 'lista_albumes.html', {'albumes': albumes})
+    return render(request, 'album/lista_albumes.html', {'albumes': albumes})
 
 
 # 5. Detalles de un álbum específico
@@ -76,7 +76,7 @@ def detalle_album(request, album_id):
     estadisticas_album = album.estadisticasalbum  # Estadísticas del álbum (OneToOne)
 
     # Renderizamos plantilla con los detalles del álbum y las estadísticas
-    return render(request, 'detalle_album.html', {
+    return render(request, 'album/detalle_album.html', {
         'album': album,
         'detalles_album': detalles_album,
         'estadisticas_album': estadisticas_album,
@@ -90,7 +90,7 @@ def canciones_album(request, album_id):
     album = Album.objects.select_related('usuario').prefetch_related(Prefetch('canciones')).get(id=album_id)
 
     # Renderizamos la plantilla de canciones para el álbum
-    return render(request, 'canciones_album.html', {'album': album})
+    return render(request, 'cancion/canciones_album.html', {'album': album})
 
 
 # 7. Comentarios de un álbum específico
@@ -105,7 +105,7 @@ def comentarios_album(request, album_id):
     ).get(id=album_id)
 
     # Renderizamos la plantilla con los comentarios del álbum
-    return render(request, 'comentarios_album.html', {
+    return render(request, 'album/comentarios_album.html', {
         'album': album,
         'comentarios': album.comentarios
     })
@@ -119,7 +119,7 @@ def detalle_cancion(request, cancion_id):
     album = cancion.album  # Álbum al que pertenece la canción
 
     # Rnederizamos la plantilla con los detalles de la canción
-    return render(request, 'detalle_cancion.html', 
+    return render(request, 'cancion/detalle_cancion.html', 
                   { 
                       'cancion': cancion,
                       'detalles': detalles_cancion, 
@@ -134,7 +134,7 @@ def lista_playlist(request, nombre_usuario):
     playlists = Playlist.objects.filter(usuario=usuario)
 
     # Renderizamos la plantilla con la lista de playlists del usuario
-    return render(request, 'lista_playlist.html', {'playlists': playlists, 'usuario': usuario})
+    return render(request, 'playlist/lista_playlist.html', {'playlists': playlists, 'usuario': usuario})
 
 
 # 10. Contenido de una playlist específica
@@ -143,7 +143,7 @@ def canciones_playlist(request, playlist_id):
     playlist = Playlist.objects.select_related('usuario').prefetch_related('canciones').prefetch_related('canciones__like_set__usuario').get(id=playlist_id)
 
     # Renderizamos la plantilla con las canciones de la playlist
-    return render(request, 'canciones_playlist.html', {
+    return render(request, 'cancion/canciones_playlist.html', {
         'playlist': playlist,
     })
 
@@ -155,7 +155,7 @@ def canciones_guardadas(request, nombre_usuario):
     lista_canciones = Guardado.objects.filter(usuario=usuario).select_related('cancion', 'cancion__usuario')
 
     # Renderizamos la plantilla con las canciones guardadas
-    return render(request, 'canciones_guardadas.html', {
+    return render(request, 'cancion/canciones_guardadas.html', {
         'usuario': usuario,
         'lista_canciones': lista_canciones,
     })
@@ -186,7 +186,7 @@ def mensajes_privados(request, emisor_id, receptor_id):
             return redirect('mensajes_privados', emisor_id=emisor_id, receptor_id=receptor_id)
 
     # Renderizamos la plantilla con los mensajes entre los dos usuarios
-    return render(request, 'mensajes_privados.html', {
+    return render(request, 'usuario/mensajes_privados.html', {
         'mensajes': mensajes,
         'emisor': emisor,
         'receptor': receptor
@@ -204,7 +204,7 @@ def lista_no_sigue(request, nombre_usuario):
     # Aplicamos el filtro para obtener usuarios que el usuario actual NO sigue.
     usuarios_no_seguidos = todos_usuarios.filter(seguidores__isnull=True)
 
-    return render(request, 'lista_no_sigue.html', {
+    return render(request, 'usuario/lista_no_sigue.html', {
         'usuarios_no_seguidos': usuarios_no_seguidos
     })
 

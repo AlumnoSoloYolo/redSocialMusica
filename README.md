@@ -359,6 +359,37 @@ A continuación, se detallan las URLs disponibles en la aplicación, junto con l
 
 
 
+## Uso de templates tags (al menos 5)
+
+ {% include 'header.html' %} en 'principal.html'
+ {% block contenido %} {% endblock %} en 'principal.html'
+ {% for %} {% endfor %} en 'album.html'
+ {% empty %} en 'album.html'
+ {% if %} {% else %} {% endif %} en 'album.html'
+
+Son frecuentes en todo el proyecto, pero aquí especifico un ejemplo que muestra el uso de cada uno de ellos.
+
+
+ ## Uso de al menos cinco operadores distintos
+ {% if album.album.numero_pistas > 0 %} en 'album.html'
+ {% if comentario.usuario.ciudad == None or comentario.usuario.ciudad != "" %} en 'comentario.html'
+ {% if album.usuario and album.usuario.nombre_usuario %} en 'comentarios_album.html'
+ {% if estadisticas_album.comentarios == 0 %} en 'detalle_album.html
+
+
+ ## uso de distintos template filters
+  <p>Estudio de Grabación: {{ album.album.estudio_grabacion|default:"Desconocido" }}</p> en 'album.html'
+  <p>Ciudad: {{ comentario.usuario.ciudad|upper }}</p> en 'comentario.html'
+  <p>Género: {{ album.descripcion|lower }}</p> en 'comentario.html'
+  <p>{{ comentario.fecha_publicacion|date:"d/m/Y" }}</p> en 'comentario.html'
+  <p>{{ comentario.contenido|linebreaks }}</p> en 'comentario.html'
+  {% if comentarios|length > 0 %} en 'comentarios-album.html
+  <p>Género: {{ album.descripcion|lower }}</p> en 'comentario.html'
+
+Estoy especificando ejemplos de los distintos filtros que he utilizado, los cuales repito en el proyecto sumando más de 10. 
+      
+        
+
 
 
 
