@@ -301,3 +301,17 @@ body, html{
     height: 300px;
     border-radius: 50%;
 }
+
+
+
+/* Para evitar que el textarea se redimensione */
+.bio {
+    resize: none; /* Desactiva la opción de redimensionar */
+    min-height: 150px; /* Altura mínima */
+}
+
+/* Opcional: Puedes ajustar la altura si lo deseas */
+.bio {
+    height: 150px; /* Define una altura fija */
+    width: 300px;
+}

@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     'django_seed',
     'socialSound',
     'debug_toolbar',
+    'django_bootstrap5',
+    'django_bootstrap_icons',
 ]
 
 MIDDLEWARE = [

@@ -2,6 +2,29 @@ from django.shortcuts import render, redirect
 from django.db.models import Sum, Q, Prefetch, Count
 from .models import Usuario, Album, Cancion, Playlist, Guardado, MensajePrivado, Comentario
 from django.views.defaults import page_not_found
+from .forms import UsuarioModelForm
+
+
+## CRUD
+ 
+def registro_usuario(request):
+    if request.method == "POST":
+        form = UsuarioModelForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()  # Guarda el formulario si es válido
+            return redirect('index')  # Redirige a una página después del registro (cambia 'login' por la ruta correcta)
+        else:
+            return render(request, 'CRUD_usuario/crear_usuario.html', {'form': form})  # Si no es válido, vuelve a mostrar el formulario con los errores
+    else:
+        form = UsuarioModelForm()  # Si es GET, muestra el formulario vacío
+        return render(request, 'CRUD_usuario/crear_usuario.html', {'form': form})
+        
+       
+    
+
+
+
+
 
 # 1. Página de inicio con enlaces a todas las URLs
 def index(request):

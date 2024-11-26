@@ -2,6 +2,7 @@ from django.urls import path, re_path
 from .import views
 
 urlpatterns = [
+     path('registro/', views.registro_usuario, name='registro_usuario'),
      path('', views.index, name='index'),  # Página de inicio con enlaces a todas las URLs
      path('mensajes_privados/<int:emisor_id>/<int:receptor_id>/', views.mensajes_privados, name='mensajes_privados'),
      re_path(r'^perfil_usuario/(?P<nombre_usuario>[a-zA-Z0-9_]+)/$', views.perfil_usuario, name='perfil_usuario'),
