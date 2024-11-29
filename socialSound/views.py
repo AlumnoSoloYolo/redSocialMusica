@@ -5,19 +5,24 @@ from django.views.defaults import page_not_found
 from .forms import UsuarioModelForm
 
 
-## CRUD
+## CRUD Usuario
  
+
 def registro_usuario(request):
     if request.method == "POST":
         form = UsuarioModelForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()  # Guarda el formulario si es válido
-            return redirect('index')  # Redirige a una página después del registro (cambia 'login' por la ruta correcta)
+            form.save()  
+            return redirect('index')  
         else:
-            return render(request, 'CRUD_usuario/crear_usuario.html', {'form': form})  # Si no es válido, vuelve a mostrar el formulario con los errores
+            return render(request, 'CRUD_usuario/crear_usuario.html', {'form': form})  
     else:
-        form = UsuarioModelForm()  # Si es GET, muestra el formulario vacío
+        form = UsuarioModelForm()  
         return render(request, 'CRUD_usuario/crear_usuario.html', {'form': form})
+
+ 
+def mostrar_usuarios(request):
+    pass
         
        
     
